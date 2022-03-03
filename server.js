@@ -6,7 +6,7 @@ const sessions = require('express-session');
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static("views/public"));
+// app.use(express.static("views/public"));
 app.use(cookieParser());
 
 app.set('view engine', 'pug');
