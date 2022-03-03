@@ -28,8 +28,13 @@
     </nav>
     <main>
         <aside>
-            <button type="button" class="aside_button" id="login_button">Login</button>
-            <button type="button" class="aside_button" id="register_button">Registrierung</button>
+            <form class="login" name="loginForm" id="loginForm" method="post" action="/api/login">
+                <label for="loginUsername">Username</label>
+                <input type="text" name="username" id="loginUsername" required placeholder="Enter Username" autocomplete="username">
+                <label for="loginPassword">Password</label>
+                <input type="password" name="password" id="loginPassword" required placeholder="Enter Password" autocomplete="current-password">
+                <button type="submit" id="loginSubmit">Login</button>
+            </form>
             <h3>Nächstes Modul:</h3>
             <ul class="aside_list" id="module_list">
                 <li>Modul1</li>
