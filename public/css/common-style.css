@@ -1,6 +1,6 @@
 @media screen and (min-width: 800px) {
     body {
-        margin: 0px;
+        margin: 0;
         display: grid;
                 grid-template-columns: 1fr 6fr 1fr;
                 grid-template-rows: 1fr 20fr 1fr;
@@ -12,7 +12,7 @@
 
 @media screen and (min-width: 500px) and (max-width: 799px){
     body{
-        margin: 0px;
+        margin: 0;
         display: grid;
                 grid-template-columns: 1fr 6fr 1fr;
                 grid-template-rows: 1fr 20fr 1fr;
@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 499px) {
     body {
-        margin: 0px;
+        margin: 0;
         display: grid;
                 grid-template-columns: 6fr 1fr;
                 grid-template-rows: 1fr 3fr 20fr 1fr;
@@ -54,8 +54,8 @@ main {
 aside {
     padding: 5px;
     position: absolute;
-    with: 10%;
-    right: 0%;
+    width: 10%;
+    right: 0;
     background-color: red;
 }
 
