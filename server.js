@@ -170,5 +170,5 @@ app.get('/logout',(req,res) => {
 
 //Start listen to requests
 app.listen(PORT, function() {
-    console.log("server is listening on port: " + PORT);
+    console.log("Server is listening on port: " + PORT);
 });
