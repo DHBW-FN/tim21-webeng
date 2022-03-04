@@ -4,22 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Startseite</title>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="css/common-style.css">
 </head>
 
 <body>
     <header>
         <h1>Modul-Planer</h1>
     </header>
-    <!--Navigation bar-->
-    <div id="nav-placeholder"></div>
-
-    <script>
-        $(function(){
-            $("#nav-placeholder").load("/views/templates/navbar.html");
-        });
-    </script>
-    <!--end of Navigation bar-->
+    <nav>
+        <ul>
+            <li><a href="/">Startseite</a></li>
+            <li><a href="calendar/index.html">Kalender</a></li>
+            <li><a href="modules">Module:</a>
+                <ul>
+                    <li><a href="modules/mathe.html">Mathe</a></li>
+                    <li><a href="modules/theoretischeInformatik.html">Theoretische Informatik</a></li>
+                    <li><a href="modules/programmieren.html">Programmieren</a></li>
+                    <li><a href="modules/bwl.html">BWL</a></li>
+                    <li><a href="modules/webEngineering.html">Web Engineering</a></li>
+                    <li><a href="modules/elektrotechnik.html">Elektrotechnik</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
     <main>
         <aside>
             <form class="login" name="loginForm" id="loginForm" method="post" action="/api/login">
