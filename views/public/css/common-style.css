@@ -2,11 +2,11 @@
     body {
         margin: 0;
         display: grid;
-                grid-template-columns: 1fr 6fr 1fr;
-                grid-template-rows: 1fr 20fr 1fr;
-                grid-template-areas: "myheader myheader myheader"
-                                   "mynav mymain mymain"
-                                   "mynav myfooter myfooter";
+                grid-template-columns: 1fr 6fr;
+                grid-template-rows: 1fr 30fr 1fr;
+                grid-template-areas: "myheader myheader"
+                                   "mynav mymain"
+                                   "mynav myfooter";
     }
 }
 
@@ -14,11 +14,11 @@
     body{
         margin: 0;
         display: grid;
-                grid-template-columns: 1fr 6fr 1fr;
-                grid-template-rows: 1fr 20fr 1fr;
-                grid-template-areas: "myheader myheader myheader"
-                                   "mynav mymain mymain"
-                                   "mynav myfooter myfooter";
+                grid-template-columns: 1fr 6fr;
+                grid-template-rows: 1fr 40fr 1fr;
+                grid-template-areas: "myheader myheader"
+                                   "mynav mymain"
+                                   "mynav myfooter";
     }
     }
 
@@ -26,10 +26,9 @@
     body {
         margin: 0;
         display: grid;
-                grid-template-columns: 6fr 1fr;
-                grid-template-rows: 1fr 3fr 20fr 1fr;
+                grid-template-columns: 1fr 6fr;
+                grid-template-rows: 1fr 50fr 1fr;
                 grid-template-areas: "myheader myheader"
-                                    "mynav mymain"
                                     "mynav mymain"
                                     "mynav myfooter";
     }
@@ -38,13 +37,11 @@
 header {
     padding: 5px;
     grid-area: myheader;
-    background-color: red;
 }
 
 nav {
     padding: 5px;
     grid-area: mynav;
-    background-color: red;
 }
 
 main {
@@ -55,12 +52,11 @@ aside {
     padding: 5px;
     position: absolute;
     width: 10%;
+    min-width: 85px;
     right: 0;
-    background-color: red;
 }
 
 footer {
     padding: 5px;
     grid-area: myfooter;
-    background-color: red;
 }
