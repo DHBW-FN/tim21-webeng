@@ -56,11 +56,41 @@ ul{
     padding: 8px;
 }
 
-#img_container1{
+#img_container_webEngineering1{
     background-image: url(../assets/picture_webEngineering.png);
 }
 
-#img_container2{
+#img_container_webEngineering2{
     background-image: url(../assets/picture_webEngineering.png);
     background-position: center right;
+}
+
+#img_container_mathe1{
+    background-image: url(../assets/picture_mathe2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+#img_container_mathe2{
+    background-image: url(../assets/picture_mathe.jpg);
+    background-size: 100%;
+}
+
+#img_container_theoretischeInformatik1{
+    background-image: url(../assets/picture_theoretischeInformatik.jpg);
+    background-size: 100%;
+    background-position: bottom;
+}
+
+#img_container_programmieren1{
+    background-image: url(../assets/picture_programmieren.jpg);
+    background-position: center right;
+}
+
+#img_container_programmieren2{
+    background-image: url(../assets/picture_programmieren2.png);
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
