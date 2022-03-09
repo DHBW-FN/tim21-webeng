@@ -30,6 +30,7 @@ ul{
     background-color: #0088EE;
     margin: 10px;
     padding: 8px;
+    box-shadow: 2px 2px 2px 2px black;
 }
 
 .middle_block{
@@ -42,6 +43,7 @@ ul{
     background-color: #0088EE;
     margin: 10px;
     padding: 8px;
+    box-shadow: 2px 2px 2px 2px black;
 }
 
 .big_block{
@@ -54,6 +56,7 @@ ul{
     background-color: #0088EE;
     margin: 10px;
     padding: 8px;
+    box-shadow: 2px 2px 2px 2px black;
 }
 
 #img_container_webEngineering1{
@@ -93,4 +96,30 @@ ul{
     background-size: 250%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#img_container_bwl1{
+    background-image: url(../assets/picture_bwl.jpg);
+    background-position: center;
+}
+
+#img_container_bwl2{
+    background-image: url(../assets/picture_bwl3.webp);
+    background-position: center right;
+}
+
+#img_container_bwl3{
+    background-image: url(../assets/picture_bwl2.jpg);
+    background-position: center right;
+}
+
+#img_container_elektrotechnik1{
+    background-image: url(../assets/picture_elektrotechnik.jpg);
+    background-position: center right;
+    background-size: 100%;
+}
+
+#img_container_elektrotechnik2{
+    background-image: url(../assets/picture_elektrotechnik2.jpg);
+    background-position: center right;
 }
