@@ -10,7 +10,7 @@ app.use(express.static("views/public"));
 app.use(cookieParser());
 
 app.set('view engine', 'pug');
-app.set('views', 'views/template');
+app.set('views', 'views/templates');
 
 const PORT = 80;
 const oneDay = 1000 * 60 * 60 * 24;
@@ -167,6 +167,11 @@ app.get('/logout',(req,res) => {
     res.redirect('/');
     res.end();
 });
+
+app.get('/', (req, res) => {
+    res.render("home");
+    res.end();
+})
 
 //Start listen to requests
 app.listen(PORT, function() {
