@@ -1,30 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *{
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
 :root{
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
-    --primary-color: #695CFE;
-    --primary-color-light: #F6F5FF;
+    --primary-color: #e2001a;
+    --primary-color-light: #d0949a;
     --toggle-color: #DDD;
     --text-color: #707070;
 
-    --tran-02: all 0.2s ease;
-    --tran-03: all 0.3s ease;
-    --tran-04: all 0.4s ease;
-    --tran-05: all 0.5s ease;
+    --transition-2: all 0.2s ease;
+    --transition-3: all 0.3s ease;
+    --transition-4: all 0.4s ease;
+    --transition-5: all 0.5s ease;
 }
 
 body{
     height: 100vh;
     background: var(--body-color);
-    transition: var(--tran-05);
+    transition: var(--transition-5);
 }
 
 body.dark{
@@ -47,7 +47,7 @@ Sidebar
     width: 250px;
     padding: 10px 14px;
     background: var(--sidebar-color);
-    transition: var(--tran-05);
+    transition: var(--transition-5);
     z-index: 100;
 }
 
@@ -62,7 +62,7 @@ Reusable
     font-size: 16px;
     font-weight: 500;
     color: var(--text-color);
-    transition: var(--tran-03);
+    transition: var(--transition-3);
     white-space: nowrap;
     opacity: 1;
 }
@@ -97,24 +97,24 @@ Reusable
 .sidebar li .icon,
 .sidebar li .text{
     color: var(--text-color);
-    transition: var(--tran-02);
+    transition: var(--transition-2);
 }
 
 .sidebar header{
     position: relative;
 }
 
-.sidebar .image-text img{
+.sidebar .menu-header img{
     width: 40px;
     border-radius: 6px;
 }
 
-.sidebar header .image-text{
+.sidebar header .menu-header{
     display: flex;
     align-items: center;
 }
 
-header .image-text .header-text{
+header .menu-header .header-text{
     display: flex;
     flex-direction: column;
 }
@@ -137,7 +137,7 @@ header .image-text .header-text{
     border-radius: 50%;
     color: var(--sidebar-color);
     font-size: 22px;
-    transition: var(--tran-03);
+    transition: var(--transition-3);
 }
 
 .sidebar.close header .toggle{
@@ -155,7 +155,7 @@ body.dark .sidebar header .toggle{
 .sidebar .search-box{
     background: var(--primary-color-light);
     border-radius: 6px;
-    transition: var(--tran-05);
+    transition: var(--transition-5);
 }
 
 .search-box input{
@@ -167,7 +167,7 @@ body.dark .sidebar header .toggle{
     font-size: 16px;
     font-weight: 500;
     background: var(--primary-color-light);
-    transition: var(--tran-05);
+    transition: var(--transition-5);
 }
 
 .sidebar li a{
@@ -177,7 +177,7 @@ body.dark .sidebar header .toggle{
     align-items: center;
     text-decoration: none;
     border-radius: 6px;
-    transition: var(--tran-04);
+    transition: var(--transition-4);
 }
 
 .sidebar li a:hover{
@@ -205,10 +205,10 @@ body.dark .sidebar li a:hover .text{
     position: relative;
     border-radius: 6px;
     background: var(--primary-color-light);
-    transition: var(--tran-05);
+    transition: var(--transition-5);
 }
 
-.menu-bar .mode .moon-sun{
+.menu-bar .mode .light-dark{
     height: 50px;
     width: 60px;
     display: flex;
@@ -217,18 +217,18 @@ body.dark .sidebar li a:hover .text{
 
 .menu-bar .mode i{
     position: absolute;
-    transition: var(--tran-03);
+    transition: var(--transition-3);
 }
 
-.menu-bar .mode i.sun{
+.menu-bar .mode i.moon{
     opacity: 0;
 }
 
-body.dark .menu-bar .mode i.sun{
+body.dark .menu-bar .mode i.moon{
     opacity: 1;
 }
 
-body.dark .menu-bar .mode i.moon{
+body.dark .menu-bar .mode i.sun{
     opacity: 0;
 }
 /*
@@ -245,7 +245,7 @@ body.dark .menu-bar .mode i.moon{
     cursor: pointer;
     border-radius: 6px;
     background: var(--primary-color-light);
-    transition: var(--tran-05);
+    transition: var(--transition-5);
 }
 
 .toggle-switch .switch{
@@ -254,7 +254,7 @@ body.dark .menu-bar .mode i.moon{
     width: 44px;
     border-radius: 25px;
     background: var(--toggle-color);
-    transition: var(--tran-05);
+    transition: var(--transition-5);
 }
 
 .switch::before{
@@ -267,7 +267,7 @@ body.dark .menu-bar .mode i.moon{
     left: 5px;
     transform: translateY(-50%);
     background: var(--sidebar-color);
-    transition: var(--tran-03);
+    transition: var(--transition-3);
 }
 
 body.dark .switch::before{
@@ -280,7 +280,7 @@ body.dark .switch::before{
     left: 250px;
     width: calc(100% - 250px);
     background: var(--body-color);
-    transition: var(--tran-05);
+    transition: var(--transition-5);
 }
 
 .home .text{
