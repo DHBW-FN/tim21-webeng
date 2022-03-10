@@ -38,13 +38,11 @@
 header {
     padding: 5px;
     grid-area: myheader;
-    background-color: red;
 }
 
 nav {
     padding: 5px;
     grid-area: mynav;
-    background-color: red;
 }
 
 main {
@@ -56,11 +54,9 @@ aside {
     position: absolute;
     width: 10%;
     right: 0;
-    background-color: red;
 }
 
 footer {
     padding: 5px;
     grid-area: myfooter;
-    background-color: red;
 }
