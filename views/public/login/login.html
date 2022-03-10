@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/common-styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<center class="middle">
+    <div>
+        Welcome user! Please log in below!
+        Or <a href="../register/register.html">Register here!</a>
+    </div>
+    <div>
+        <form class="login" name="loginForm" id="loginForm" method="post" action="/api/login">
+            <label for="loginUsername">Username</label>
+            <input type="text" name="username" id="loginUsername" required placeholder="Enter Username" autocomplete="username">
+            <label for="loginPassword">Password</label>
+            <input type="password" name="password" id="loginPassword" required placeholder="Enter Password" autocomplete="current-password">
+            <button type="submit" id="loginSubmit">Login</button>
+        </form>
+    </div>
+</center>
+</body>
+</html>
