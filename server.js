@@ -209,7 +209,7 @@ app.get('/', (req, res) => {
 })
 
 /*
- * Rest Endpoint to deliver module page if browser attempts get at root level
+ * Rest Endpoint to deliver module page
  */
 app.get('/modules', (req, res) => {
     res.render("modules");
@@ -217,7 +217,7 @@ app.get('/modules', (req, res) => {
 })
 
 /*
- * Rest Endpoint to deliver calender page if browser attempts get at root level
+ * Rest Endpoint to deliver calender page
  */
 app.get('/calender', (req, res) => {
     res.render("calender");
