@@ -208,6 +208,22 @@ app.get('/', (req, res) => {
     res.end();
 })
 
+/*
+ * Rest Endpoint to deliver module page if browser attempts get at root level
+ */
+app.get('/modules', (req, res) => {
+    res.render("modules");
+    res.end();
+})
+
+/*
+ * Rest Endpoint to deliver calender page if browser attempts get at root level
+ */
+app.get('/calender', (req, res) => {
+    res.render("calender");
+    res.end();
+})
+
 //Start listen to requests
 app.listen(PORT, function() {
     console.log("Server is listening on port " + PORT);
