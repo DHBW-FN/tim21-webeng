@@ -8,6 +8,7 @@
 }
 
 :root{
+    /*Define colors used in navbar*/
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
     --primary-color: #e2001a;
@@ -15,6 +16,7 @@
     --toggle-color: #DDD;
     --text-color: #707070;
 
+    /*Define transitions used in navbar*/
     --transition-2: all 0.2s ease;
     --transition-3: all 0.3s ease;
     --transition-4: all 0.4s ease;
@@ -27,6 +29,7 @@ body{
     transition: var(--transition-5);
 }
 
+/*Redefining colors for dark mode*/
 body.dark{
     --body-color: #18191A;
     --sidebar-color: #242526;
@@ -67,6 +70,7 @@ Reusable
     opacity: 1;
 }
 
+/*Remove text if sidebar is closed*/
 .sidebar.close .text{
     opacity: 0;
 }
@@ -123,6 +127,7 @@ header .menu-header .header-text{
     font-weight: 600;
 }
 
+/*Shape open/close toggle of sidebar*/
 .sidebar header .toggle{
     position: absolute;
     top: 50%;
@@ -140,10 +145,12 @@ header .menu-header .header-text{
     transition: var(--transition-3);
 }
 
+/*Flip open/close toggle if sidebar is closed*/
 .sidebar.close header .toggle{
     transform: translateY(-50%);
 }
 
+/*Change color of open/close toggle in dark mode*/
 body.dark .sidebar header .toggle{
     color: var(--text-color);
 }
@@ -184,6 +191,7 @@ body.dark .sidebar header .toggle{
     background-color: var(--primary-color);
 }
 
+/*Change color of icon and text if item gets hovered*/
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text{
     color: var(--sidebar-color);
@@ -224,10 +232,12 @@ body.dark .sidebar li a:hover .text{
     opacity: 0;
 }
 
+/*Hide moon icon if dark mode is on*/
 body.dark .menu-bar .mode i.moon{
     opacity: 1;
 }
 
+/*Show sun icon if dark mode is off*/
 body.dark .menu-bar .mode i.sun{
     opacity: 0;
 }
@@ -257,6 +267,7 @@ body.dark .menu-bar .mode i.sun{
     transition: var(--transition-5);
 }
 
+/*Add before to dark mode switch*/
 .switch::before{
     content: '';
     position: absolute;
@@ -270,10 +281,12 @@ body.dark .menu-bar .mode i.sun{
     transition: var(--transition-3);
 }
 
+/*Add before to dark mode switch in dark mode*/
 body.dark .switch::before{
     left: 24px;
 }
 
+/*This is how content besides navbar is formatted by default*/
 .home{
     position: relative;
     height: 100vh;
@@ -290,6 +303,7 @@ body.dark .switch::before{
     padding: 8px 40px;
 }
 
+/*This expands content besides navbar if navbar is closed*/
 .sidebar.close ~ .home{
     left: 88px;
     width: calc(100% - 88px);
