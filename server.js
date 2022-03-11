@@ -12,14 +12,17 @@ app.use(cookieParser());
 app.set('view engine', 'pug');
 app.set('views', 'views/templates');
 
+// Defining various server constants
 const PORT = 80;
 const oneDay = 1000 * 60 * 60 * 24;
 
+// Defining regex for input checking of register process
 const reName = "^(?=.{1,20})[a-z A-Z]+-?_?[a-z A-Z]+?$";
 const reUsername = "^[a-z A-Z]+-?_?[a-z A-Z]+?$";
 const rePassword = "^(?=.*?[0-9])(?=.+?[!#,+-_?]).{8,}$";
 const reComment = "^.{0,100}$";
 
+// Creating session
 app.use(sessions({
     secret: "8304c4f5-8f6f-445a-8669-379d41e35003",
     saveUninitialized:true,
@@ -27,7 +30,20 @@ app.use(sessions({
     resave: false
 }));
 
+/** Class representing a user. */
 class User {
+    /**
+     * Create a user
+     *
+     * @param firstname - First name of the user
+     * @param lastname - Last name of the user
+     * @param username - Unique Username of the user
+     * @param password - Password of the user
+     * @param sex - Sex of the user male/female
+     * @param interests - Interests of the user
+     * @param comment - Custom comment of the user
+     * @param tos - Accepted the TOS true/false
+     */
     constructor(firstname, lastname, username, password, sex, interests, comment, tos) {
         this.firstname = firstname;
         this.lastname = lastname;
@@ -40,6 +56,9 @@ class User {
     }
 }
 
+/**
+ * @returns {*[]|any} - A list of all registered users
+ */
 function getUsers() {
     if (fs.existsSync("users.json")) {
         let content = fs.readFileSync("users.json", 'utf8');
@@ -54,6 +73,10 @@ function getUsers() {
     return [];
 }
 
+/**
+ * @param username - The unique username of the user to get
+ * @returns {boolean|*|any} - The user object of exists, otherwise false
+ */
 function getUserByUsername(username) {
     let users = getUsers();
     for (let user of users) {
@@ -64,7 +87,9 @@ function getUserByUsername(username) {
     return false;
 }
 
-
+/*
+ * REST Endpoint for logging in a user
+ */
 app.post('/api/login',(req, res) => {
     console.log(req.session.userid);
     let username = req.body.username
@@ -96,6 +121,9 @@ app.post('/api/login',(req, res) => {
     res.end();
 });
 
+/*
+ * REST Endpoint for registering a user
+ */
 app.post('/api/register',(req, res) => {
     let firstname = req.body.firstname;
     let lastname = req.body.lastname;
@@ -162,12 +190,19 @@ app.post('/api/register',(req, res) => {
     res.end();
 });
 
+/*
+ * REST endpoint for logging a user out and destroying the session
+ * Redirects to landing page afterwards
+ */
 app.get('/logout',(req,res) => {
     req.session.destroy();
     res.redirect('/');
     res.end();
 });
 
+/*
+ * Rest Endpoint to deliver landing page if browser attempts get at root level
+ */
 app.get('/', (req, res) => {
     res.render("home");
     res.end();
