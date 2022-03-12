@@ -1,4 +1,39 @@
 extends layout
 
 block content
-    .text Test1234
+    main#landingPageMain
+        aside
+            a(href='')
+            h3 N&auml;chstes Modul:
+            ul#module_list.aside_list
+                li Modul1
+                li Modul2
+                li Modul3
+            h3 N&auml;chste Pr&uuml;fung:
+            ul#exams_list.aside_list
+                li Pr&uuml;fung1
+                li Pr&uuml;fung2
+                li Pr&uuml;fung3
+            h3 Weitere Infos:
+            ul#infos_list.aside_list
+                li Info1
+                li Info2
+                li Info3
+        .surr_block
+            h1 Willkommen bei Ihrem pers&ouml;nlichen Modul-Planer
+            h2 Login
+            p
+                | Loggen Sie sich ein oder registrieren Sie sich um die Webseite auf sich anzupassen
+            ul
+                li
+                    a(href='login/login.html') Hier geht&apos;s zum Login
+                li
+                    a(href='register/register.html') Oder registrieren Sie sich hier
+            br
+            h2 Kalender
+            p
+                | In der Navigationsleiste am linken Bildschirmrand k&ouml;nnen Sie Ihren Vorlesungsplan ansehen.
+            br
+            h2 Module
+            p
+                | Um genauere Informationen zu Ihren Modulen zu erhalten, w&auml;hlen Sie in der Navigationsleiste Ihr Modul.
