@@ -35,6 +35,10 @@
     }
 }
 
+#landingPageMain {
+    margin: 20px;
+}
+
 header {
     padding: 5px;
     grid-area: myheader;
