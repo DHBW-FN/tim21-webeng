@@ -4,13 +4,13 @@ head
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title Startseite
     // <link rel="stylesheet" href="css/common-styles.css">
-    link(rel='stylesheet', href='css/sidebar-nav-style.css')
+    link(rel='stylesheet', href='/css/sidebar-nav-style.css')
     link(href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css', rel='stylesheet')
 nav.sidebar
     header
         .menu-header
             span.image
-                img(src='logo.png', alt='logo')
+                img(src='/images/logo.png', alt='logo')
             .text.header-text
                 span.name Module-Plan
         i.bx.bx-chevron-right.toggle
@@ -49,4 +49,4 @@ section.home
     block content
         // Content goes here
         .text Dashboard
-script(src='navbar.js')
+script(src='/scripts/navbar.js')

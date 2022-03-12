@@ -234,7 +234,7 @@ app.get('/calendar', (req, res) => {
     //     }
     // }
 
-    res.render("calender", {
+    res.render("calendar", {
         events: events
     });
     res.end();
