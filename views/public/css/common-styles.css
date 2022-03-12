@@ -12,7 +12,6 @@
     }
 }
 
-/*TODO rework this, make more granular*/
 .home header {
     padding: 5px;
     grid-area: myheader;
