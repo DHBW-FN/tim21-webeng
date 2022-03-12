@@ -2,6 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const cookieParser = require("cookie-parser");
 const sessions = require('express-session');
+const ical = require('node-ical');
 
 const app = express();
 app.use(express.json());
@@ -219,8 +220,23 @@ app.get('/modules', (req, res) => {
 /*
  * Rest Endpoint to deliver calender page
  */
-app.get('/calender', (req, res) => {
-    res.render("calender");
+app.get('/calendar', (req, res) => {
+    const events = ical.sync.parseFile('TIM21.ics');
+
+    // TODO remove debugging log
+    // for (const event of Object.values(events)){
+    //     if (event !== undefined){
+    //         console.log(
+    //             'Summary: ' + event.summary +
+    //             '\nStart Date: ' + event.start +
+    //             '\n'
+    //         );
+    //     }
+    // }
+
+    res.render("calender", {
+        events: events
+    });
     res.end();
 })
 
