@@ -1,0 +1,17 @@
+Tobi
+    General:
+            https://gist.github.com/joepie91/c0069ab0e0da40cc7b54b8c2203befe1
+            https://www.section.io/engineering-education/session-management-in-nodejs-using-expressjs-and-express-session/
+            https://medium.com/swlh/basic-login-system-with-node-js-99acf02275b9
+            https://codeforgeek.com/manage-session-using-node-js-express-4/
+            https://www.sitepoint.com/a-beginners-guide-to-pug/
+            https://pugjs.org/language/inheritance.html
+            https://pugjs.org/language/includes.html
+            https://stackoverflow.com/questions/46850330/how-to-include-a-css-file-in-pugjs-template
+    Navbar:
+        https://www.w3schools.com/css/css_navbar_vertical.asp
+        https://boxicons.com/usage
+        https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
+    Calendar:
+        http://193.196.6.13/rapla?page=ical&user=Schmidt&file=TIM21
+        https://www.npmjs.com/package/node-ical
