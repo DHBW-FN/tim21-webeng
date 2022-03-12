@@ -1,23 +1,7 @@
-body{
-    min-with:403px;
-}
 
-main{
-    min-with:403px;
-}
 hr {
     border: 1px solid black;
     background-color: black;
-}
-
-ul{
-    padding-left: 20px;
-}
-
-.surr_block{
-    float: left;
-    width: 85%;
-    height: 100%;
 }
 
 .small_block{

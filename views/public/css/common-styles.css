@@ -1,55 +1,51 @@
-/*
 @media screen and (min-width: 800px) {
-    .home{
+    body{
         margin: 0;
         display: grid;
-                grid-template-columns: 1fr 6fr;
-                grid-template-rows: 1fr 30fr 1fr;
-                grid-template-areas: "myheader myheader"
-                                   "mynav mymain"
-                                   "mynav myfooter";
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: 1fr 30fr 1fr;
+        grid-template-areas: "myheader myheader"
+                             "mynav mymain"
+                             "mynav myfooter";
     }
 }
 
-@media screen and (min-width: 500px) and (max-width: 799px){
-    .home{
+@media screen and (min-width: 500px) and (max-width: 800px){
+    body{
         margin: 0;
         display: grid;
-                grid-template-columns: 1fr 6fr;
-                grid-template-rows: 1fr 40fr 1fr;
-                grid-template-areas: "myheader myheader"
-                                   "mynav mymain"
-                                   "mynav myfooter";
-    }
-    }
-
-@media screen and (max-width: 499px) {
-    .home{
-        margin: 0;
-        display: grid;
-                grid-template-columns: 1fr 6fr;
-                grid-template-rows: 1fr 50fr 1fr;
-                grid-template-areas: "myheader myheader"
-                                    "mynav mymain"
-                                    "mynav myfooter";
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: 1fr 40fr 1fr;
+        grid-template-areas: "myheader myheader"
+                             "mynav mymain"
+                             "mynav myfooter";
     }
 }
 
-#landingPageMain {
+@media screen and (max-width: 500px) {
+    body{
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: 1fr 50fr 1fr;
+        grid-template-areas: "myheader myheader"
+                             "mynav mymain"
+                             "mynav myfooter";
+    }
+}
+
+/*#landingPageMain {
     margin: 20px;
-}
+}*/
 
 header {
     padding: 5px;
     grid-area: myheader;
-<<<<<<< HEAD:views/public/css/common-styles.css
-=======
 }
 
 nav {
     padding: 5px;
     grid-area: mynav;
->>>>>>> frick/modules:views/public/css/common-style.css
 }
 
 main {
@@ -67,8 +63,47 @@ aside {
 footer {
     padding: 5px;
     grid-area: myfooter;
-<<<<<<< HEAD:views/public/css/common-styles.css
-}*/
-=======
 }
->>>>>>> frick/modules:views/public/css/common-style.css
+
+.surr_block{
+    float: left;
+    height: 100%;
+}
+
+@media screen and (min-width: 810px) {
+    .surr_block{
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 810px) {
+    .surr_block{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 495px) and (max-width: 600px) {
+    .surr_block{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 495px) {
+    .surr_block{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .surr_block{
+            width: 100%;
+        }
+    aside{
+        visibility: hidden;
+    }
+}
+
+
+ul{
+    padding-left: 20px;
+}
