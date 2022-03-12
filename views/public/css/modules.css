@@ -1,0 +1,125 @@
+body{
+    min-with:403px;
+}
+
+main{
+    min-with:403px;
+}
+hr {
+    border: 1px solid black;
+    background-color: black;
+}
+
+ul{
+    padding-left: 20px;
+}
+
+.surr_block{
+    float: left;
+    width: 85%;
+    height: 100%;
+}
+
+.small_block{
+    float: left;
+    width: 28%;
+    min-width: 185px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #0088EE;
+    margin: 10px;
+    padding: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.middle_block{
+    float: left;
+    width: 60%;
+    min-width: 403px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #0088EE;
+    margin: 10px;
+    padding: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.big_block{
+    float: left;
+    width: 92%;
+    min-width: 403px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #0088EE;
+    margin: 10px;
+    padding: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+#img_container_webEngineering1{
+    background-image: url(../assets/picture_webEngineering.png);
+}
+
+#img_container_webEngineering2{
+    background-image: url(../assets/picture_webEngineering.png);
+    background-position: center right;
+}
+
+#img_container_mathe1{
+    background-image: url(../assets/picture_mathe2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+#img_container_mathe2{
+    background-image: url(../assets/picture_mathe.jpg);
+    background-size: 100%;
+}
+
+#img_container_theoretischeInformatik1{
+    background-image: url(../assets/picture_theoretischeInformatik.jpg);
+    background-size: 100%;
+    background-position: bottom;
+}
+
+#img_container_programmieren1{
+    background-image: url(../assets/picture_programmieren.jpg);
+    background-position: center right;
+}
+
+#img_container_programmieren2{
+    background-image: url(../assets/picture_programmieren2.png);
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#img_container_bwl1{
+    background-image: url(../assets/picture_bwl.jpg);
+    background-position: center;
+}
+
+#img_container_bwl2{
+    background-image: url(../assets/picture_bwl3.webp);
+    background-position: center right;
+}
+
+#img_container_bwl3{
+    background-image: url(../assets/picture_bwl2.jpg);
+    background-position: center right;
+}
+
+#img_container_elektrotechnik1{
+    background-image: url(../assets/picture_elektrotechnik.jpg);
+    background-position: center right;
+    background-size: 100%;
+}
+
+#img_container_elektrotechnik2{
+    background-image: url(../assets/picture_elektrotechnik2.jpg);
+    background-position: center right;
+}

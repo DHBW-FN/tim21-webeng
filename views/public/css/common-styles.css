@@ -20,6 +20,11 @@
                 grid-template-areas: "myheader myheader myheader"
                                    "mynav mymain mymain"
                                    "mynav myfooter myfooter";
+                grid-template-columns: 1fr 6fr;
+                grid-template-rows: 1fr 40fr 1fr;
+                grid-template-areas: "myheader myheader"
+                                   "mynav mymain"
+                                   "mynav myfooter";
     }
     }
 
