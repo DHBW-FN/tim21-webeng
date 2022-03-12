@@ -3,11 +3,11 @@
     .home{
         margin: 0;
         display: grid;
-                grid-template-columns: 1fr 6fr 1fr;
-                grid-template-rows: 1fr 20fr 1fr;
-                grid-template-areas: "myheader myheader myheader"
-                                   "mynav mymain mymain"
-                                   "mynav myfooter myfooter";
+                grid-template-columns: 1fr 6fr;
+                grid-template-rows: 1fr 30fr 1fr;
+                grid-template-areas: "myheader myheader"
+                                   "mynav mymain"
+                                   "mynav myfooter";
     }
 }
 
@@ -15,11 +15,6 @@
     .home{
         margin: 0;
         display: grid;
-                grid-template-columns: 1fr 6fr 1fr;
-                grid-template-rows: 1fr 20fr 1fr;
-                grid-template-areas: "myheader myheader myheader"
-                                   "mynav mymain mymain"
-                                   "mynav myfooter myfooter";
                 grid-template-columns: 1fr 6fr;
                 grid-template-rows: 1fr 40fr 1fr;
                 grid-template-areas: "myheader myheader"
@@ -32,10 +27,9 @@
     .home{
         margin: 0;
         display: grid;
-                grid-template-columns: 6fr 1fr;
-                grid-template-rows: 1fr 3fr 20fr 1fr;
+                grid-template-columns: 1fr 6fr;
+                grid-template-rows: 1fr 50fr 1fr;
                 grid-template-areas: "myheader myheader"
-                                    "mynav mymain"
                                     "mynav mymain"
                                     "mynav myfooter";
     }
@@ -44,6 +38,14 @@
 header {
     padding: 5px;
     grid-area: myheader;
+<<<<<<< HEAD:views/public/css/common-styles.css
+=======
+}
+
+nav {
+    padding: 5px;
+    grid-area: mynav;
+>>>>>>> frick/modules:views/public/css/common-style.css
 }
 
 main {
@@ -54,10 +56,15 @@ aside {
     padding: 5px;
     position: absolute;
     width: 10%;
+    min-width: 85px;
     right: 0;
 }
 
 footer {
     padding: 5px;
     grid-area: myfooter;
+<<<<<<< HEAD:views/public/css/common-styles.css
 }*/
+=======
+}
+>>>>>>> frick/modules:views/public/css/common-style.css
