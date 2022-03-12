@@ -1,5 +1,5 @@
 @media screen and (min-width: 800px) {
-    body{
+    .home{
         margin: 0;
         display: grid;
         grid-template-columns: 1fr 6fr;
@@ -11,7 +11,7 @@
 }
 
 @media screen and (min-width: 500px) and (max-width: 800px){
-    body{
+    .home{
         margin: 0;
         display: grid;
         grid-template-columns: 1fr 6fr;
@@ -23,7 +23,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    body{
+    .home{
         margin: 0;
         display: grid;
         grid-template-columns: 1fr 6fr;
@@ -38,15 +38,11 @@
     margin: 20px;
 }*/
 
-header {
+/*TODO rework this, make more granular*/
+/*header {
     padding: 5px;
     grid-area: myheader;
-}
-
-nav {
-    padding: 5px;
-    grid-area: mynav;
-}
+}*/
 
 main {
     grid-area: mymain;
@@ -102,8 +98,8 @@ footer {
         visibility: hidden;
     }
 }
-
-
+/*TODO rework this, make more granular*/
+/*
 ul{
     padding-left: 20px;
-}
+}*/
