@@ -1,101 +1,35 @@
-@media screen and (min-width: 800px) {
-    .home{
-        margin: 0;
-        display: grid;
-        grid-template-columns: 6fr;
-        grid-template-rows: 1fr 30fr 1fr;
-        grid-template-areas: "myheader"
-                             "mymain"
-                             "myfooter";
+@media (max-width: 800px) {
+    aside{
+        opacity: 0;
+    }
+    main#landingPageMain{
+        margin-right: 0;
     }
 }
-
-@media screen and (min-width: 500px) and (max-width: 800px){
-    .home{
-        margin: 0;
-        display: grid;
-        grid-template-columns: 6fr;
-        grid-template-rows: 1fr 40fr 1fr;
-        grid-template-areas: "myheader"
-                             "mymain"
-                             "myfooter";
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .home{
-        margin: 0;
-        display: grid;
-        grid-template-columns: 6fr;
-        grid-template-rows: 1fr 50fr 1fr;
-        grid-template-areas: "myheader"
-                             "mymain"
-                             "myfooter";
+@media (min-width: 801px) {
+    main#landingPageMain{
+        margin-right: 200px;
     }
 }
 
 /*TODO rework this, make more granular*/
-/*header {
+.home header {
     padding: 5px;
     grid-area: myheader;
-}*/
-
-main {
-    grid-area: mymain;
 }
 
 aside {
-    padding: 5px;
-    position: absolute;
-    width: 10%;
-    min-width: 85px;
+    background-color: red;
+    position: fixed;
     right: 0;
+    top: 0;
+    width: 200px;
 }
 
 footer {
     padding: 5px;
-    grid-area: myfooter;
 }
 
-.surr_block{
-    float: left;
-    height: 100%;
-}
-
-@media screen and (min-width: 810px) {
-    .surr_block{
-        width: 85%;
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width: 810px) {
-    .surr_block{
-        width: 80%;
-    }
-}
-
-@media screen and (min-width: 495px) and (max-width: 600px) {
-    .surr_block{
-        width: 70%;
-    }
-}
-
-@media screen and (min-width: 450px) and (max-width: 495px) {
-    .surr_block{
-        width: 65%;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .surr_block{
-            width: 100%;
-        }
-    aside{
-        visibility: hidden;
-    }
-}
-/*TODO rework this, make more granular*/
-/*
-ul{
+.home aside ul{
     padding-left: 20px;
-}*/
+}
