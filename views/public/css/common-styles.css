@@ -1,5 +1,6 @@
+/*
 @media screen and (min-width: 800px) {
-    body {
+    .home{
         margin: 0;
         display: grid;
                 grid-template-columns: 1fr 6fr 1fr;
@@ -11,7 +12,7 @@
 }
 
 @media screen and (min-width: 500px) and (max-width: 799px){
-    body{
+    .home{
         margin: 0;
         display: grid;
                 grid-template-columns: 1fr 6fr 1fr;
@@ -23,7 +24,7 @@
     }
 
 @media screen and (max-width: 499px) {
-    body {
+    .home{
         margin: 0;
         display: grid;
                 grid-template-columns: 6fr 1fr;
@@ -40,11 +41,6 @@ header {
     grid-area: myheader;
 }
 
-nav {
-    padding: 5px;
-    grid-area: mynav;
-}
-
 main {
     grid-area: mymain;
 }
@@ -59,4 +55,4 @@ aside {
 footer {
     padding: 5px;
     grid-area: myfooter;
-}
+}*/
