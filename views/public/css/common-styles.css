@@ -12,6 +12,10 @@
     }
 }
 
+.surr_block{
+    margin: 15px;
+}
+
 .home header {
     padding: 5px;
     grid-area: myheader;
