@@ -124,36 +124,41 @@ block content
             .big_block
                 center
                     h4 Lerneinheiten und Inhalte
-                hr
-                ul
-                    li
-                        u Lehr- und Lerneinheiten:
-                        br
-                        | #{module["lerninhalte"]["einheit"]}
-                    li
-                        u Präsenzzeit:
-                        br
-                        | #{module["lerninhalte"]["praesenzzeit"]}
-                    li
-                        u Selbststudium:
-                        br
-                        | #{module["lerninhalte"]["selbststudium"]}
-                    li
-                        u Inhalte:
-                        ul
-                            each val in module["lerninhalte"]["inhalte"]
-                                li= val
+                each lerninhalt in module["lerninhalte"]
+                    hr
+                    ul
+                        li
+                            u Lehr- und Lerneinheit:
+                            br
+                            | #{lerninhalt["einheit"]}
+                        li
+                            u Präsenzzeit:
+                            br
+                            | #{lerninhalt["praesenzzeit"]}
+                        li
+                            u Selbststudium:
+                            br
+                            | #{lerninhalt["selbststudium"]}
+                        li
+                            u Inhalte:
+                            ul
+                                each val in lerninhalt["inhalte"]
+                                    li= val
             if module["besonderheiten"] !== undefined
                 .big_block
                     center
                         h4 Besonderheiten
                     hr
                     each besonderheit in module["besonderheiten"]
-                        center
-                            h4= besonderheit["name"]
+                        if !besonderheit["content"].length > 1
+                            center
+                                h4= besonderheit["name"]
                         ul
                         each val2 in besonderheit["content"]
-                            li= val2
+                            if besonderheit["content"].length > 1
+                                li= val2
+                            else
+                                | #{val2}
 
             .small_block
                 center

@@ -40,20 +40,22 @@
       "handlungskompetenz": "Über die Sachkompetenz hinaus soll das Denken in fachübergreifenden Zusammenhängen geschult werden, sowie strategische Handlungskompetenz und unternehmerisches Denken vermittelt werden."
     },
     "lerninhalte": {
-      "einheit": "Betriebswirtschaftslehre",
-      "praesenzzeit": 36,
-      "selbststudium": 28,
-      "inhalte": [
-        "Einführung in die theoretischen Ansätze und Methoden in der Betriebswirtschaftslehre",
-        "Ziele und Planung in der Betriebswirtschaftslehre",
-        "Führungsstile und konzepte",
-        "Rechtsformen",
-        "Bilanzen",
-        "Gewinn- und Verlustrechnung",
-        "Kostenrechnung",
-        " Finanzierung und Investition",
-        "Ganzheitliches Unternehmensplanspiel"
-      ]
+      "lerninhalt1": {
+        "einheit": "Betriebswirtschaftslehre",
+        "praesenzzeit": 36,
+        "selbststudium": 28,
+        "inhalte": [
+          "Einführung in die theoretischen Ansätze und Methoden in der Betriebswirtschaftslehre",
+          "Ziele und Planung in der Betriebswirtschaftslehre",
+          "Führungsstile und konzepte",
+          "Rechtsformen",
+          "Bilanzen",
+          "Gewinn- und Verlustrechnung",
+          "Kostenrechnung",
+          " Finanzierung und Investition",
+          "Ganzheitliches Unternehmensplanspiel"
+        ]
+      }
     },
     "voraussetzungen": "keine",
     "literatur": [
@@ -133,27 +135,28 @@
       "handlungskompetenz": "keine"
     },
     "lerninhalte": {
-      "einheit": "Grundlagen der Elektrotechnik",
-      "praesenzzeit": 48,
-      "selbststudium": 42,
-      "inhalte": [
-        "Elektrische Größen und ihre Einheiten",
-        "Das elektrische Feld",
-        "Gleichstromkreis, Zweipole",
-        "Lineare Netzwerke und Berechungsmethoden",
-        "Periodische und zeitabhängige Größen",
-        "Das magnetische Feld",
-        "Sprung- und Impulsantworten passiver Bauelemente",
-        "Wechselstromkreis"
-      ]
+      "grundlagen": {
+        "einheit": "Grundlagen der Elektrotechnik",
+        "praesenzzeit": 48,
+        "selbststudium": 42,
+        "inhalte": [
+          "Elektrische Größen und ihre Einheiten",
+          "Das elektrische Feld",
+          "Gleichstromkreis, Zweipole",
+          "Lineare Netzwerke und Berechungsmethoden",
+          "Periodische und zeitabhängige Größen",
+          "Das magnetische Feld",
+          "Sprung- und Impulsantworten passiver Bauelemente",
+          "Wechselstromkreis"
+        ]
+      }
     },
     "voraussetzungen": "keine",
     "literatur": [
       "Grundgebiete der Elektrotechnik 1, A. Führer, K. Heidemann, W. Nerreter, Hanser",
       "Grundgebiete der Elektrotechnik 2, A. Führer, K. Heidemann, W. Nerreter, Hanser",
       "Theoretische Elektrotechnik, A. Reibiger, W. Mathis, K. Küpfmüller, Springer Vieweg"
-    ],
-    "besonderheiten": "keine"
+    ]
   },
   "mathe": {
     "allgemein": {
@@ -192,28 +195,46 @@
       "sozialkompetenz": "keine",
       "handlungskompetenz": "Die Studierenden sind in der Lage, naturwissenschaftlich-technische Vorgänge mit Hilfe der diskreten Mathematik, der linearen Algebra und der Analysis zu beschreiben. Sie beginnen, Algorithmen der numerischen Mathematik zu nutzen und diese in lauffähige Programme umzusetzen."
     },
-    "lerninhalte 1": {
-      "einheit": "Lineare Algebra",
-      "praesenzzeit": 48,
-      "selbststudium": 72,
-      "inhalte": [
-        "Grundlagen der diskreten Mathematik - Grundlegende algebraische Strukturen - Vektorräume und lineare Abbildungen - Determinanten, Eigenwerte, Diagonalisierbarkeit - Anwendungsbeispiele."
-      ]
-    },
-    "lerninhalte 2": {
-      "einheit": "Analysis",
-      "praesenzzeit": 48,
-      "selbststudium": 72,
-      "inhalte": [
-        "Folgen und Reihen, Stetigkeit - Differentialrechnung einer Veränderlichen im Reellen - Integralrechnung einer Veränderlichen im Reellen - Anwendungsbeispiele"
-      ]
+    "lerninhalte": {
+      "lineareAlgebra": {
+        "einheit": "Lineare Algebra",
+        "praesenzzeit": 48,
+        "selbststudium": 72,
+        "inhalte": [
+          "Grundlagen der diskreten Mathematik",
+          "Grundlegende algebraische Strukturen",
+          "Vektorräume und lineare Abbildungen",
+          "Determinanten",
+          "Eigenwerte",
+          "Diagonalisierbarkeit",
+          "Anwendungsbeispiele."
+        ]
+      },
+      "analysis": {
+        "einheit": "Analysis",
+        "praesenzzeit": 48,
+        "selbststudium": 72,
+        "inhalte": [
+          "Folgen und Reihen",
+          "Stetigkeit - Differentialrechnung einer Veränderlichen im Reellen",
+          "Integralrechnung einer Veränderlichen im Reellen",
+          "Anwendungsbeispiele"
+        ]
+      }
     },
     "voraussetzungen": "keine",
     "literatur": [
       "Beutelspacher: Lineare Algebra, Vieweg+Teubner - Fischer: Lineare Algebra, Vieweg+Teubner - Hartmann: Mathematik für Informatiker, Vieweg+Teubner - Lau: Algebra und Diskrete Mathematik 1, Springer - Teschl, Teschl: Mathematik für Informatiker: Band 1. diskrete Mathematik und lineare Algebra, Springer - Kreußler, Pfister: Mathematik für Informatiker: Algebra, Analysis, Diskrete Strukturen, Springer",
       "Estep: Angewandte Analysis in einer Unbekannten, Springer - Hartmann: Mathematik für Informatiker, Vieweg+Teubner - Hildebrandt: Analysis 1, Springer - Teschl, Teschl: Mathematik für Informatiker: Band 2. Analysis und Statistik, Springer"
     ],
-    "besonderheiten": "Dieses Modul beinhaltet zusätzlich bis zu 24h begleitetes Selbststudium in Form von Übungsstunden, Laboren oder Projekten. Hierbei werden Übungsaufgaben und/oder vertiefende Aufgabenstellungen von den Studierenden bearbeitet."
+    "besonderheiten": {
+      "default": {
+        "name": "Besonderheit",
+        "content": [
+          "Dieses Modul beinhaltet zusätzlich bis zu 24h begleitetes Selbststudium in Form von Übungsstunden, Laboren oder Projekten. Hierbei werden Übungsaufgaben und/oder vertiefende Aufgabenstellungen von den Studierenden bearbeitet."
+        ]
+      }
+    }
   },
   "programmieren": {
     "allgemein": {
@@ -254,34 +275,36 @@
       "handlungskompetenz": "Die Studierenden können eigenständig Problemstellungen der Praxis analysieren und zu deren Lösung Programme entwerfen, programmieren und testen."
     },
     "lerninhalte": {
-      "einheit": "Programmieren",
-      "praesenzzeit": 96,
-      "selbststudium": 174,
-      "inhalte": [
-        "Kenntnisse in prozeduraler Programmierung:",
-        "Algorithmenbeschreibung",
-        "Datentypen",
-        "E/A-Operationen und Dateiverarbeitung",
-        "Operatoren",
-        "Kontrollstrukturen",
-        "Funktionen",
-        "Stringverarbeitung",
-        "Strukturierte Datentypen",
-        "dynamische Datentypen",
-        "Zeiger",
-        "Speicherverwaltung",
-        "Kenntnisse in objektorientierter Programmierung:",
-        "objektorientierter Programmentwurf",
-        "Idee und Merkmale der objektorientierten Programmierung",
-        "Klassenkonzept",
-        "Operatoren",
-        "Überladen von Operatoren und Methoden",
-        "Vererbung und Überschreiben von Operatoren",
-        "Polymorphismus",
-        "Templates oder Generics",
-        "Klassenbibliotheken",
-        "Speicherverwaltung, Grundverständnis Garbage Collection"
-      ]
+      "programmieren": {
+        "einheit": "Programmieren",
+        "praesenzzeit": 96,
+        "selbststudium": 174,
+        "inhalte": [
+          "Kenntnisse in prozeduraler Programmierung:",
+          "Algorithmenbeschreibung",
+          "Datentypen",
+          "E/A-Operationen und Dateiverarbeitung",
+          "Operatoren",
+          "Kontrollstrukturen",
+          "Funktionen",
+          "Stringverarbeitung",
+          "Strukturierte Datentypen",
+          "dynamische Datentypen",
+          "Zeiger",
+          "Speicherverwaltung",
+          "Kenntnisse in objektorientierter Programmierung:",
+          "objektorientierter Programmentwurf",
+          "Idee und Merkmale der objektorientierten Programmierung",
+          "Klassenkonzept",
+          "Operatoren",
+          "Überladen von Operatoren und Methoden",
+          "Vererbung und Überschreiben von Operatoren",
+          "Polymorphismus",
+          "Templates oder Generics",
+          "Klassenbibliotheken",
+          "Speicherverwaltung, Grundverständnis Garbage Collection"
+        ]
+      }
     },
     "voraussetzungen": "keine",
     "literatur": [
@@ -293,7 +316,14 @@
       "Ullenboom: Java ist auch eine Insel, Rheinwerk Computing",
       "McConnell: Code Complete: A Practical Handbook of Software Construction, Microsoft Press"
     ],
-    "besonderheiten": "Dieses Modul beinhaltet zusätzlich bis zu 24h begleitetes Selbststudium in Form von Übungsstunden, Laboren oder Projekten. Hierbei werden Übungsaufgaben und/oder vertiefende Aufgabenstellungen von den Studierenden bearbeitet."
+    "besonderheiten": {
+      "default": {
+        "name": "Besonderheit",
+        "content": [
+          "Dieses Modul beinhaltet zusätzlich bis zu 24h begleitetes Selbststudium in Form von Übungsstunden, Laboren oder Projekten. Hierbei werden Übungsaufgaben und/oder vertiefende Aufgabenstellungen von den Studierenden bearbeitet."
+        ]
+      }
+    }
   },
   "theoretischeInformatik": {
     "allgemein": {
@@ -333,15 +363,17 @@
       "handlungskompetenz": "Die Studierenden haben mit Abschluss des Moduls die Kompetenz erworben, sich mit Fachvertretern und Laien über Fachfragen und Aufgabenstellungen in den Bereichen Logik, logische Folgerung sowie Verifikation und abstraktes Denken auf wissenschaftlichem Niveau auszutauschen."
     },
     "lerninhalte": {
-      "einheit": "Grundlagen und Logik",
-      "praesenzzeit": 60,
-      "selbststudium": 90,
-      "inhalte": [
-        "Algebraische Strukturen: Relationen, Ordnung, Abbildung",
-        "Formale Logik: Aussagenlogik, Prädikatenlogik",
-        "Algorithmentheorie; Komplexität, Rekusion, Terminierung, Korrektheit (mit Bezug zur Logik)",
-        "Grundkenntnisse der deklarativen (logischen/funktionalen/....) Programmierung"
-      ]
+      "grundlagen": {
+        "einheit": "Grundlagen und Logik",
+        "praesenzzeit": 60,
+        "selbststudium": 90,
+        "inhalte": [
+          "Algebraische Strukturen: Relationen, Ordnung, Abbildung",
+          "Formale Logik: Aussagenlogik, Prädikatenlogik",
+          "Algorithmentheorie; Komplexität, Rekusion, Terminierung, Korrektheit (mit Bezug zur Logik)",
+          "Grundkenntnisse der deklarativen (logischen/funktionalen/....) Programmierung"
+        ]
+      }
     },
     "voraussetzungen": "keine",
     "literatur": [
@@ -349,8 +381,7 @@
       "Kelly, J.: The Essence of Logic, Prentice Hall",
       "Alagic, Arbib: The Design of Well-Structured and Correct Programs, Springer",
       "Clocksin, W.F.; Mellish, C.S.: Programming in Prolog, Springer"
-    ],
-    "besonderheiten": "keine"
+    ]
   },
   "webEngineering": {
     "allgemein": {
@@ -375,7 +406,7 @@
       ]
     },
     "pruefungsformen": {
-      "pruefungsleistung": "KLausurarbeit oder Kombinierte Prüfung",
+      "pruefungsleistung": "Klausurarbeit oder Kombinierte Prüfung",
       "pruefungsumfang": "Siehe Prüfungsordnung",
       "benotung": "Ja"
     },
@@ -391,20 +422,22 @@
       "sozialkompetenz": "Die Studierenden können sowohl eigenständig, also auch im Team zielorientiert und nachhaltig handeln.",
       "handlungskompetenz": "keine"
     },
-    "lerninhalte 1": {
-      "einheit": "Web-Engineering ",
-      "praesenzzeit": 36,
-      "selbststudium": 39,
-      "inhalte": [
-        "Einführung in HTML und CSS in der aktuellen Version.",
-        "Grundlagen der Internetprotokolle und ihre zugehörigen Technologien.",
-        "Betrachtung einer Client-Programmiersprache und/oder einer oder mehrerer serverseitig eingesetzten Programmiersprache.",
-        "Optional: Dokumentauszeichnungssprache XML",
-        "Optional: Spezielle Dokumenttypen zur Darstellung von 2D oder 3D-Grafik.",
-        "Optional: Grundlagen der Mediengestaltung, soweit nicht bereits in anderen Modulen abgedeckt."
-      ]
+    "lerninhalte": {
+      "lerninhalt1": {
+        "einheit": "Web-Engineering ",
+        "praesenzzeit": 36,
+        "selbststudium": 39,
+        "inhalte": [
+          "Einführung in HTML und CSS in der aktuellen Version.",
+          "Grundlagen der Internetprotokolle und ihre zugehörigen Technologien.",
+          "Betrachtung einer Client-Programmiersprache und/oder einer oder mehrerer serverseitig eingesetzten Programmiersprache.",
+          "Optional: Dokumentauszeichnungssprache XML",
+          "Optional: Spezielle Dokumenttypen zur Darstellung von 2D oder 3D-Grafik.",
+          "Optional: Grundlagen der Mediengestaltung, soweit nicht bereits in anderen Modulen abgedeckt."
+        ]
+      }
     },
-    "lerninhalte 2": {
+    "lerninhalt2": {
       "einheit": "Labor Webengineering 1",
       "praesenzzeit": 12,
       "selbststudium": 3,
@@ -418,6 +451,13 @@
       "wiki.selfhtml.org",
       "www.w3c.org de.selfhtml.org"
     ],
-    "besonderheiten": "Die Prüfungsdauer bezieht sich auf die Klausur."
+    "besonderheiten": {
+      "default": {
+        "name": "Besonderheit",
+        "content": [
+          "Die Prüfungsdauer bezieht sich auf die Klausur."
+        ]
+      }
+    }
   }
 }
