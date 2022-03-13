@@ -106,7 +106,6 @@ function getModules() {
  * REST Endpoint for logging in a user
  */
 app.post('/api/login',(req, res) => {
-    console.log(req.session.userid);
     let username = req.body.username
     let password = req.body.password
 
@@ -125,14 +124,14 @@ app.post('/api/login',(req, res) => {
         }
         // Password wrong
         console.log("Invalid Password for " + username);
-        res.redirect('login');
+        res.redirect('/login');
         res.end();
         return;
     }
 
     // Username incorrect
     console.log("User " + username + " doesn't exist!");
-    res.redirect('login');
+    res.redirect('/login');
     res.end();
 });
 
@@ -153,19 +152,19 @@ app.post('/api/register',(req, res) => {
 
     if (!newUser.firstname.match(reName)) {
         console.log("First Name invalid!")
-        res.redirect('register');
+        res.redirect('/register');
         res.end();
         return;
     }
     if (!newUser.lastname.match(reName)) {
         console.log("Last Name invalid!")
-        res.redirect('register');
+        res.redirect('/register');
         res.end();
         return;
     }
     if (!newUser.username.match(reUsername)) {
         console.log("Username invalid!")
-        res.redirect('register');
+        res.redirect('/register');
         res.end();
         return;
     }
@@ -177,21 +176,21 @@ app.post('/api/register',(req, res) => {
     }
     if (!newUser.comment.match(reComment)) {
         console.log("Comment invalid!")
-        res.redirect('register');
+        res.redirect('/register');
         res.end();
         return;
     }
 
     if (!tos) {
         console.log("TOS not accepted!")
-        res.redirect('register');
+        res.redirect('/register');
         res.end();
         return;
     }
 
     if (getUserByUsername(username)) {
         console.log("User '" + newUser.username + "' already exists");
-        res.redirect('register');
+        res.redirect('/register');
         res.end();
         return;
     }
@@ -201,7 +200,17 @@ app.post('/api/register',(req, res) => {
     console.log("Created new user: " + newUser.username);
     fs.writeFileSync("users.json", JSON.stringify(users, null, 4));
 
-    res.redirect('login');
+    res.redirect('/login');
+    res.end();
+});
+
+app.get('/login',(req,res) => {
+    res.render("login");
+    res.end();
+});
+
+app.get('/register',(req,res) => {
+    res.render("register");
     res.end();
 });
 
