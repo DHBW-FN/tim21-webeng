@@ -25,6 +25,14 @@ nav.sidebar
                         i.bx.bx-home.icon
                         span.text.nav-text Home
                 li.nav-link
+                    a(href='/login')
+                        i.bx.bx-log-in.icon
+                        span.text.nav-text Login
+                li.nav-link
+                    a(href='/register')
+                        i.bx.bx-user-plus.icon
+                        span.text.nav-text Register
+                li.nav-link
                     a(href='/calendar')
                         i.bx.bx-calendar.icon
                         span.text.nav-text Calendar
@@ -46,7 +54,25 @@ nav.sidebar
                     .toggle-switch
                         span.switch
 section.home
-    block content
-        // Content goes here
-        .text Dashboard
+    .mainContent
+        block content
+            // Content goes here
+            .text Dashboard
+    block aside
+        aside
+            h3 Nächstes Modul:
+            ul#module_list.aside_list
+                li Modul1
+                li Modul2
+                li Modul3
+            h3 Nächste Prüfung:
+            ul#exams_list.aside_list
+                li Pr&uuml;fung1
+                li Pr&uuml;fung2
+                li Pr&uuml;fung3
+            h3 Weitere Infos:
+            ul#infos_list.aside_list
+                li Info1
+                li Info2
+                li Info3
 script(src='/scripts/navbar.js')
