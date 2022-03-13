@@ -2,12 +2,12 @@
     aside{
         opacity: 0;
     }
-    main#landingPageMain{
+    .mainContent{
         margin-right: 0;
     }
 }
 @media (min-width: 801px) {
-    main#landingPageMain{
+    .mainContent{
         margin-right: 200px;
     }
 }

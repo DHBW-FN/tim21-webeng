@@ -6,41 +6,26 @@ block content
     .middle
         form#registerForm.register(name='registerForm', method='post', action='/api/register')
             label(for='registerFirstName') First Name
-            br
             input#registerFirstName(type='text', name='firstname', required='', placeholder='Enter First Name')
-            br
             label(for='registerLastName') Last Name
-            br
             input#registerLastName(type='text', name='lastname', required='', placeholder='Enter Last Name')
-            br
             label(for='registerUsername') Username
-            br
             input#registerUsername(type='text', name='username', required='', placeholder='Enter Username')
-            br
             label(for='registerPassword') Password
-            br
             input#registerPassword(type='password', name='password', required='', placeholder='Enter Password')
-            br
             label(for='genderSelect') Select gender
-            br
             #genderSelect
                 label(for='registerSexMale') Male
                 input#registerSexMale(type='radio', name='sex', value='male')
                 label(for='registerSexFemale') Female
                 input#registerSexFemale(type='radio', name='sex', value='female')
-            br
             label(for='registerInterests') Interests
-            br
             select#registerInterests(name='interests', size='3')
                 option(value='school') School
                 option(value='friends') Friends
                 option(value='gaming') Gaming
-            br
             label(for='registerComment') Comment:
-            br
             textarea#registerComment(name='comment', form='registerForm', maxlength='100', placeholder='Enter text here...')
-            br
             label(for='registerTos') Accept Terms of Service
             input#registerTos(type='checkbox', name='tos')
-            br
             button#registerSubmit(type='submit') Register

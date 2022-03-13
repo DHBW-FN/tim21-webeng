@@ -58,6 +58,7 @@ class User {
 }
 
 /**
+ * Get users.json representation
  * @returns {*[]|any} - A list of all registered users
  */
 function getUsers() {
@@ -75,6 +76,7 @@ function getUsers() {
 }
 
 /**
+ * Get a user of users.json by username
  * @param username - The unique username of the user to get
  * @returns {boolean|*|any} - The user object of exists, otherwise false
  */
@@ -88,6 +90,10 @@ function getUserByUsername(username) {
     return false;
 }
 
+/**
+ * Get modules.json representation
+ * @returns {*[]|any}
+ */
 function getModules() {
     if (fs.existsSync("modules.json")) {
         let content = fs.readFileSync("modules.json", 'utf8');
@@ -114,7 +120,7 @@ app.post('/api/login',(req, res) => {
         if (password === user.password) {
             // Username & Password correct
             // Setting session
-            req.session.userid = username;
+            req.session.user = user;
 
             console.log("User " + username + " logged in successfully!");
 
@@ -204,11 +210,19 @@ app.post('/api/register',(req, res) => {
     res.end();
 });
 
+/*
+ * Rest Endpoint to deliver login page
+ */
 app.get('/login',(req,res) => {
-    res.render("login");
+    res.render("login", {
+        user: req.session.user
+    });
     res.end();
 });
 
+/*
+ * Rest Endpoint to deliver register page
+ */
 app.get('/register',(req,res) => {
     res.render("register");
     res.end();

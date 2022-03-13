@@ -3,15 +3,17 @@ block append head
     link(rel='stylesheet', href='/css/login.css')
     title Login
 block content
-    center.middle
-        div
-            | Welcome user! Please log in below!
+    .middle
+        .login_greeting
+            | Welcome user!
+            br
+            | Please log in below!
+            br
             | Or
             a(href='/register') Register here!
-        div
-            form#loginForm.login(name='loginForm', method='post', action='/api/login')
-                label(for='loginUsername') Username
-                input#loginUsername(type='text', name='username', required='', placeholder='Enter Username', autocomplete='username')
-                label(for='loginPassword') Password
-                input#loginPassword(type='password', name='password', required='', placeholder='Enter Password', autocomplete='current-password')
-                button#loginSubmit(type='submit') Login
+        form#loginForm.login(name='loginForm', method='post', action='/api/login')
+            label(for='loginUsername') Username
+            input#loginUsername(type='text', name='username', required='', placeholder='Enter Username', autocomplete='username')
+            label(for='loginPassword') Password
+            input#loginPassword(type='password', name='password', required='', placeholder='Enter Password', autocomplete='current-password')
+            button#loginSubmit(type='submit') Login
