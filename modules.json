@@ -1,0 +1,98 @@
+{
+  "bwl": {
+    "allgemein": {
+      "name": "BWL",
+      "ganzer_name": "Betriebswirtschaftslehre (BWL) und Wahlunits",
+      "modulnummer": "T3INF1005",
+      "semester": 1,
+      "moduldauer": 2,
+      "modulverantwortung": "Prof. Dr. Jürgen Vollmer",
+      "sprachen": [
+        "Deutsch",
+        "Englisch"
+      ],
+      "lehrformen": [
+        "Vorlesung",
+        "Übung"
+      ],
+      "lehrmethoden": [
+        "Lehrvortrag",
+        "Diskussion",
+        "Gruppenarbeit",
+        "Projekt"
+      ]
+    },
+    "pruefungsformen": {
+      "pruefungsleistung": "Kombinierte Prüfung - Klausurarbeit (< 50 %)",
+      "pruefungsumfang": "Siehe Pruefungsordnung",
+      "benotung": "Ja"
+    },
+    "workload": {
+      "total": 150,
+      "praesenz": 84,
+      "selbststudium": 66,
+      "ects": 5
+    },
+    "qualifikationsziele": {
+      "fachkompetenz": "Die Studierenden haben Grundkenntnisse der Wirtschaftswissenschaften erworben und können ihre fachlichen Aufgaben im betrieblichen Kontext einordnen.",
+      "methodenkompetenz": "Die Studierenden haben ökonomische, interkulturelle und arbeitswissenschaftliche Grundkompetenzen für Beruf und Studium erworben.",
+      "sozialkompetenz": "Die Studierenden können ihre Standpunkte in einem (ggf. interdisziplinär und interkulturell zusammengesetzten) Team vertreten und respektieren andere Sichtweisen. Sie können sich selbst und ihre Projekte organisieren und mit Kritik und Konflikten angemessen umgehen.",
+      "handlungskompetenz": "Über die Sachkompetenz hinaus soll das Denken in fachübergreifenden Zusammenhängen geschult werden, sowie strategische Handlungskompetenz und unternehmerisches Denken vermittelt werden."
+    },
+    "lerninhalte": {
+      "einheit": "Betriebswirtschaftslehre",
+      "praesenzzeit": 36,
+      "selbststudium": 28,
+      "inhalte": [
+        "Einführung in die theoretischen Ansätze und Methoden in der Betriebswirtschaftslehre",
+        "Ziele und Planung in der Betriebswirtschaftslehre",
+        "Führungsstile und konzepte",
+        "Rechtsformen",
+        "Bilanzen",
+        "Gewinn- und Verlustrechnung",
+        "Kostenrechnung",
+        " Finanzierung und Investition",
+        "Ganzheitliches Unternehmensplanspiel"
+      ]
+    },
+    "voraussetzungen": "keine",
+    "literatur": [
+      "Davis, M.: Scientific Papers and Presentations, Boston, London, San Diego",
+      "Eberhard, K.: Einführung in die Erkenntnis- und Wissenschaftstheorie, Stuttgart",
+      "Heydasch, T., Renner, K.-H.: Einführung in das wissenschaftliche Arbeiten; Fakultät für Kultur- und Sozialwissenschaften; FernUniversität Hagen, Hagen",
+      "H. W. Wieczorrek, P. Mertens: Management von IT Projekten, Springer",
+      "G. K. Kapur: Project Management for Information, Technology, Business and Certification, Prentice Hall",
+      "P. Mangold: IT-Projektmanagement kompakt, Spektrum Akademischer Verlag",
+      "Helmut Kohlert: Marketing für Ingenieure, Oldenbourg",
+      " Marion Steven: Bwl für Ingenieure, Oldenbourg",
+      "Jürgen Härdler: Betriebswirtschaftlehre für Ingenieure. Lehr- und Praxisbuch, Hanser Fachbuch",
+      "Adolf J. Schwab: Managementwissen für Ingenieure: Führung, Organisation, Existenzgründung, Springer",
+      "Managing Intercultural Conflict Effectively: Thousand Oaks, Sage - Roger Fisher, W. Ury und B.Patton: Getting to Yes , Penguin",
+      "Robert Gibson: Intercultural Business Communication, Cornelsen und Oxford - Nancy Adler: International Dimensions of Organizational Behavior, ITP - Geert\nHofstede, Cultures and Organizations, McGraw-Hill - Stella Ting: Toomey und John G. Oetzel"
+    ],
+    "besonderheiten": {
+      "entweder_oder": {
+        "name": "Entweder oder",
+        "content": [
+          "T3INF1005.0 - Schluesselqualifikationen als einzige Unit",
+          "T3INF1005.1 - Betriebswirtschaftlehre Pflicht und 2 weitere Units zur Wahl"
+        ]
+      },
+       "weitere_units": {
+         "name": "Weitere Units",
+         "content": [
+           "T3INF1005.2 - Fremdsprachen 1",
+           "T3INF1005.3 - Vortrags-, Lern- und Arbeitstechniken",
+           "T3INF1005.4 - Marketing 1",
+           "T3INF1005.5 - Marketing 2",
+           "T3INF1005.7 - Intercultural Communication 1",
+           "T3INF1005.8 - Intercultural Communication 2",
+           "T3INF1005.9 - Fremdsprachen 2",
+           "T3INF4103.1 - Projektmanagement 1",
+           "T3INF4103.2 - Projektmanagement 2",
+           "T3INF4116.1 - Einführung in technisch-wissenschaftliches Arbeiten"
+         ]
+       }
+    }
+  }
+}

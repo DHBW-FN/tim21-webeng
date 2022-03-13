@@ -88,6 +88,20 @@ function getUserByUsername(username) {
     return false;
 }
 
+function getModules() {
+    if (fs.existsSync("modules.json")) {
+        let content = fs.readFileSync("modules.json", 'utf8');
+        try {
+            return JSON.parse(content);
+        } catch (e) {
+            console.error(e);
+            return [];
+        }
+    }
+    console.log("Modules file doesn't exist!");
+    return [];
+}
+
 /*
  * REST Endpoint for logging in a user
  */
@@ -218,15 +232,20 @@ app.get('/modules', (req, res) => {
 })
 
 /*
- * Rest Endpoint to deliver module pages
+ * Rest Endpoint to deliver module pages dynamically
  */
 app.get('/modules/:module', (req, res) => {
-    if (!fs.existsSync(__dirname + '/views/public/modules/' + req.params.module + '.html')){
+    const modules = getModules();
+
+    if (modules[req.params.module] === undefined){
         res.sendStatus(404);
         res.end();
         return;
     }
-    res.sendFile(req.params.module + '.html', { root: __dirname + '/views/public/modules'});
+
+    res.render("module", {
+        module: modules[req.params.module]
+    });
 })
 
 /*

@@ -1,0 +1,170 @@
+extends layout
+block append head
+    link(rel='stylesheet', href='/css/modules.css')
+    title #{module["allgemein"]["name"]}
+block content
+    header
+        h1 #{module["allgemein"]["ganzer_name"]}
+    main
+        aside
+            h3 N&auml;chstes Modul:
+            ul#module_list.aside_list
+                li Modul1
+                li Modul2
+                li Modul3
+            h3 N&auml;chste Pr&uuml;fung:
+            ul#exams_list.aside_list
+                li Pr&uuml;fung1
+                li Pr&uuml;fung2
+                li Pr&uuml;fung3
+            h3 Weitere Infos:
+            ul#infos_list.aside_list
+                li Info1
+                li Info2
+                li Info3
+        .surr_block
+            .small_block
+                center
+                    h4 Formale Angaben zum Modul
+                hr
+                ul
+                    li
+                        u Modulnummer:
+                        br
+                        | #{module["allgemein"]["modulnummer"]}
+                    li
+                        u Verortung im Studienverlauf:
+                        br
+                        | #{module["allgemein"]["semester"]}. Studienjahr
+                    li
+                        u Moduldauer (Semester):
+                        br
+                        | #{module["allgemein"]["moduldauer"]}
+                    li
+                        u Modulverantwortung:
+                        br
+                        | #{module["allgemein"]["modulverantwortung"]}
+                    li
+                        u Sprache:
+                        br
+                        | #{module["allgemein"]["sprachen"]}
+            .small_block
+                center
+                    h4 Eingesetzte Lehrformen
+                hr
+                ul
+                    li
+                        u Lehrformen:
+                        br
+                        | #{module["allgemein"]["lehrformen"]}
+                    li
+                        u Lehrmethoden:
+                        br
+                        | #{module["allgemein"]["lehrmethoden"]}
+            .small_block
+                center
+                    h4 Eingesetzte Prüfungsformen
+                hr
+                ul
+                    li
+                        u Prüfungsleistung:
+                        br
+                        | #{module["pruefungsformen"]["pruefungsleistung"]}
+                    li
+                        u Pr&uuml;fungsumfang (in Minuten):
+                        br
+                        | #{module["pruefungsformen"]["pruefungsumfang"]}
+                    li
+                        u Benotung:
+                        br
+                        | #{module["pruefungsformen"]["benotung"]}
+            .small_block
+                center
+                    h4 Workload und ECTS-Leistungspunkte
+                hr
+                ul
+                    li
+                        u Workload insgesamt (in h):
+                        br
+                        | #{module["workload"]["total"]}
+                    li
+                        u Davon Präsenzzeit (in h):
+                        br
+                        | #{module["workload"]["praesenz"]}
+                    li
+                        u Davon Selbststudium (in h):
+                        br
+                        | #{module["workload"]["selbststudium"]}
+                    li
+                        u ECTS-Leistungspunkte:
+                        br
+                        | #{module["workload"]["ects"]}
+            #img_container_bwl1.middle_block
+            .big_block
+                center
+                    h4 Qualifikationsziele und Kompetenzen
+                hr
+                ul
+                    li
+                        u Fachkompetenz:
+                        br
+                        | #{module["qualifikationsziele"]["fachkompetenz"]}
+                    li
+                        u Methodenkompetenz:
+                        br
+                        | #{module["qualifikationsziele"]["methodenkompetenz"]}
+                    li
+                        u Personale und soziale Kompetenz:
+                        br
+                        | #{module["qualifikationsziele"]["sozialkompetenz"]}
+                    li
+                        u Übergreifende Handlungskompetenz:
+                        br
+                        | #{module["qualifikationsziele"]["handlungskompetenz"]}
+            .big_block
+                center
+                    h4 Lerneinheiten und Inhalte
+                hr
+                ul
+                    li
+                        u Lehr- und Lerneinheiten:
+                        br
+                        | #{module["lerninhalte"]["einheit"]}
+                    li
+                        u Präsenzzeit:
+                        br
+                        | #{module["lerninhalte"]["praesenzzeit"]}
+                    li
+                        u Selbststudium:
+                        br
+                        | #{module["lerninhalte"]["selbststudium"]}
+                    li
+                        u Inhalte:
+                        ul
+                            each val in module["lerninhalte"]["inhalte"]
+                                li= val
+            if module["besonderheiten"] !== undefined
+                .big_block
+                    center
+                        h4 Besonderheiten
+                    hr
+                    each besonderheit in module["besonderheiten"]
+                        center
+                            h4= besonderheit["name"]
+                        ul
+                        each val2 in besonderheit["content"]
+                            li= val2
+
+            .small_block
+                center
+                    h4 Vorraussetzungen
+                hr
+                | #{module["voraussetzungen"]}
+            #img_container_bwl3.middle_block
+            .big_block
+                center
+                    h4 Literatur
+                hr
+                ul
+                    each val in module["literatur"]
+                        li= val
