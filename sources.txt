@@ -10,6 +10,12 @@ Tobi
         https://stackoverflow.com/questions/46850330/how-to-include-a-css-file-in-pugjs-template
         https://html-to-pug.com/
         https://pughtml.com/
+        https://jsdoc.app/about-getting-started.html
+        https://blog.hubspot.com/website/css-margin-vs-padding
+        https://sodocumentation.net/pug/topic/9545/iteration-with-pug
+        https://stackoverflow.com/questions/38295332/pug-jade-input-is-a-self-closing-element-input-but-contains-nested-conten
+        https://www.w3schools.com/js/js_json.asp
+        https://www.w3schools.com/js/js_json_syntax.asp
     Navbar:
         https://www.w3schools.com/css/css_navbar_vertical.asp
         https://boxicons.com/usage
