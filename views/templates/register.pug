@@ -6,13 +6,13 @@ block content
     .middle
         form#registerForm.register(name='registerForm', method='post', action='/api/register')
             label(for='registerFirstName') First Name
-            input#registerFirstName(type='text', name='firstname', required='', placeholder='Enter First Name')
+            input#registerFirstName(type='text', name='firstname', required='', placeholder=' Enter First Name')
             label(for='registerLastName') Last Name
-            input#registerLastName(type='text', name='lastname', required='', placeholder='Enter Last Name')
+            input#registerLastName(type='text', name='lastname', required='', placeholder=' Enter Last Name')
             label(for='registerUsername') Username
-            input#registerUsername(type='text', name='username', required='', placeholder='Enter Username')
+            input#registerUsername(type='text', name='username', required='', placeholder=' Enter Username')
             label(for='registerPassword') Password
-            input#registerPassword(type='password', name='password', required='', placeholder='Enter Password')
+            input#registerPassword(type='password', name='password', required='', placeholder=' Enter Password')
             label(for='genderSelect') Select gender
             #genderSelect
                 label(for='registerSexMale') Male
@@ -25,7 +25,7 @@ block content
                 option(value='friends') Friends
                 option(value='gaming') Gaming
             label(for='registerComment') Comment:
-            textarea#registerComment(name='comment', form='registerForm', maxlength='100', placeholder='Enter text here...')
+            textarea#registerComment(name='comment', form='registerForm', maxlength='100', placeholder=' Enter text here...')
             label(for='registerTos') Accept Terms of Service
             input#registerTos(type='checkbox', name='tos')
             button#registerSubmit(type='submit') Register

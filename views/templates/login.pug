@@ -10,10 +10,10 @@ block content
             | Please log in below!
             br
             | Or
-            a(href='/register') Register here!
+            a(href='/register') register here!
         form#loginForm.login(name='loginForm', method='post', action='/api/login')
             label(for='loginUsername') Username
-            input#loginUsername(type='text', name='username', required='', placeholder='Enter Username', autocomplete='username')
+            input#loginUsername(type='text', name='username', required='', placeholder=' Enter Username', autocomplete='username')
             label(for='loginPassword') Password
-            input#loginPassword(type='password', name='password', required='', placeholder='Enter Password', autocomplete='current-password')
+            input#loginPassword(type='password', name='password', required='', placeholder=' Enter Password', autocomplete='current-password')
             button#loginSubmit(type='submit') Login

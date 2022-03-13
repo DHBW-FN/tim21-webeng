@@ -1,20 +1,38 @@
 
 hr {
-    border: 1px solid black;
-    background-color: black;
+    border: 1px solid var(--underline-color);
+    background-color: var(--underline-color);
+}
+
+/* Defining colors used in modules.css */
+:root {
+    --underline-color: #e2001a;
+    --background-color: lightgrey;
+    --shadow-color: grey;
+    --text-color: black;
+}
+
+/* Redefining colors for dark mode */
+body.dark {
+    --background-color: #3A3B3C;
+}
+
+header {
+    color: var(--text-color);
 }
 
 .small_block{
     float: left;
     width: 28%;
     min-width: 185px;
-    height: 300px;
-    border: 2px solid black;
+    min-height: 300px;
+    border: 2px solid var(--shadow-color);
     border-radius: 10px;
-    background-color: #0088EE;
+    background-color: var(--background-color);
     margin: 10px;
     padding: 8px;
-    box-shadow: 2px 2px 2px 2px black;
+    box-shadow: 2px 2px 2px 2px var(--shadow-color);
+    color: var(--text-color)
 }
 
 .middle_block{
@@ -22,12 +40,13 @@ hr {
     width: 60%;
     min-width: 403px;
     height: 300px;
-    border: 2px solid black;
+    border: 2px solid var(--shadow-color);
     border-radius: 10px;
-    background-color: #0088EE;
+    background-color:var(--background-color);
     margin: 10px;
     padding: 8px;
-    box-shadow: 2px 2px 2px 2px black;
+    box-shadow: 2px 2px 2px 2px var(--shadow-color);
+    color: var(--text-color)
 }
 
 .big_block{
@@ -35,12 +54,13 @@ hr {
     width: 92%;
     min-width: 403px;
     height: auto;
-    border: 2px solid black;
+    border: 2px solid var(--shadow-color);
     border-radius: 10px;
-    background-color: #0088EE;
+    background-color:var(--background-color);
     margin: 10px;
     padding: 8px;
-    box-shadow: 2px 2px 2px 2px black;
+    box-shadow: 2px 2px 2px 2px var(--shadow-color);
+    color: var(--text-color)
 }
 
 #img_container_webEngineering1{

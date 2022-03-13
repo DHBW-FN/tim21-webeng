@@ -17,14 +17,14 @@
       ],
       "lehrmethoden": [
         "Lehrvortrag",
-        "Diskussion",
-        "Gruppenarbeit",
-        "Projekt"
+        " Diskussion",
+        " Gruppenarbeit",
+        " Projekt "
       ]
     },
     "pruefungsformen": {
       "pruefungsleistung": "Kombinierte Prüfung - Klausurarbeit (< 50 %)",
-      "pruefungsumfang": "Siehe Pruefungsordnung",
+      "pruefungsumfang": "Siehe Prüfungsordnung",
       "benotung": "Ja"
     },
     "workload": {

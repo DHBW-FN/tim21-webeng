@@ -11,10 +11,24 @@
     grid-column: span 2;
     border-radius: 20px;
 }
+/* defining colors used */
+:root {
+    --nav-color: #3a3b3c;
+    --nav-hovering-color: indianred;
+}
+
+/* defining colors used for hyperlinks */
+a:link, a:visited, a:active {
+    color: var(--nav-color);
+}
+a:hover {
+    color: var(--nav-hovering-color);
+}
 
 .middle{
     text-align: center;
     padding-top: 20px;
+    color: var(--text-color)
 }
 
 .login{

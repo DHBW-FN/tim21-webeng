@@ -12,9 +12,16 @@
     border-radius: 20px;
 }
 
+/* Redefining colors for dark mode */
+body.dark {
+    --background-color: #3A3B3C;
+    --text-color: #CCC;
+}
+
 .middle{
     text-align: center;
     padding-top: 20px;
+    color: var(--text-color)
 }
 
 .register{
