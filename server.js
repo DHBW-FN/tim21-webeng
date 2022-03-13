@@ -210,7 +210,7 @@ app.get('/', (req, res) => {
 })
 
 /*
- * Rest Endpoint to deliver module page
+ * Rest Endpoint to deliver modules page
  */
 app.get('/modules', (req, res) => {
     res.render("modules");
