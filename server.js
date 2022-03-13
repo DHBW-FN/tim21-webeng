@@ -218,6 +218,18 @@ app.get('/modules', (req, res) => {
 })
 
 /*
+ * Rest Endpoint to deliver module pages
+ */
+app.get('/modules/:module', (req, res) => {
+    if (!fs.existsSync(__dirname + '/views/public/modules/' + req.params.module + '.html')){
+        res.sendStatus(404);
+        res.end();
+        return;
+    }
+    res.sendFile(req.params.module + '.html', { root: __dirname + '/views/public/modules'});
+})
+
+/*
  * Rest Endpoint to deliver calender page
  */
 app.get('/calendar', (req, res) => {
