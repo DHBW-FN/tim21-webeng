@@ -170,7 +170,7 @@ app.post('/api/register',(req, res) => {
     }
     if (!newUser.password.match(rePassword)) {
         console.log("Password invalid!")
-        res.redirect('register');
+        res.redirect('/register');
         res.end();
         return;
     }
