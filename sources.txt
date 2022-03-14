@@ -23,3 +23,6 @@ Tobi
     https://materializecss.com/navbar.html
     http://193.196.6.13/rapla?page=ical&user=Schmidt&file=TIM21
     https://www.npmjs.com/package/node-ical
+    https://stackoverflow.com/questions/2013255/how-to-get-year-month-day-from-a-date-object
+    https://stackoverflow.com/questions/3072233/getting-value-from-table-cell-in-javascript-not-jquery/3072366
+    https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/
