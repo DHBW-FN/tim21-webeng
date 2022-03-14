@@ -6,7 +6,9 @@ head
         link(rel='stylesheet', href='/css/common-styles.css')
         link(rel='stylesheet', href='/css/sidebar-nav-style.css')
         link(href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css', rel='stylesheet')
+// Navbar being defined here
 nav.sidebar
+    //Header of navbar defined here
     header
         .menu-header
             span.image
@@ -15,7 +17,9 @@ nav.sidebar
                 span.name Modul-Planer
         i.bx.bx-chevron-right.toggle
     .menu-bar
+        //Menu with items of navbar defined here
         .menu
+            //Menu from the top down defined here
             ul.menu-links
                 li.search-box
                     i.bx.bx-search.icon
@@ -41,12 +45,15 @@ nav.sidebar
                         i.bx.bxs-graduation.icon
                         span.text.nav-text Modules
         .bottom-menu
+            // Menu at the bottom of navbar defined here
             ul.menu-links
                 li
+                    // Logout button
                     a(href='/logout')
                         i.bx.bx-log-out.icon
                         span.text.nav-text Logout
                 li.mode
+                    // Dark-Mode toggle
                     .light-dark
                         i.bx.bx-moon.icon.sun
                         i.bx.bx-sun.icon.moon
@@ -56,7 +63,9 @@ nav.sidebar
 section.home
     .mainContent
         block content
+            // This is where basically every content will be filled by childs
     block aside
+        // Aside block to be present by default on every page. Can be replaced, appended or removed if needed
         aside
             h3 Nächste Prüfung:
             ul#exams_list.aside_list

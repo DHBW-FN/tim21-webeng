@@ -15,6 +15,7 @@ body.dark .sidebar{
     --text-color: #CCC;
 }
 
+/*Disable all transitions for specific no_transition class*/
 .no_transition * {
     -webkit-transition: none !important;
     -moz-transition: none !important;
@@ -44,13 +45,12 @@ Sidebar
     z-index: 100;
 }
 
+/*Define sidebar if closed*/
 .sidebar.close{
     width: 88px;
 }
 
-/*
-Reusable
- */
+/*Define text in sidebar e.g. in header*/
 .sidebar .text{
     font-size: 16px;
     font-weight: 500;
@@ -65,6 +65,7 @@ Reusable
     opacity: 0;
 }
 
+/*Define sidebar logo*/
 .sidebar .image{
     min-width: 60px;
     display: flex;
@@ -72,6 +73,7 @@ Reusable
     justify-content: center;
 }
 
+/*Define menu points in sidebar e.g. Home, Login, Modules,...*/
 .sidebar li{
     height: 50px;
     margin-top: 10px;
@@ -80,6 +82,7 @@ Reusable
     align-items: center;
 }
 
+/*Define icons of listItems in sidebar*/
 .sidebar li .icon{
     display: flex;
     align-items: center;
@@ -145,16 +148,19 @@ body.dark .sidebar header .toggle{
     color: var(--text-color);
 }
 
+/*Define upper menu of navbar*/
 .sidebar .menu{
     margin-top: 35px;
 }
 
+/*Define whole search menu point*/
 .sidebar .search-box{
     background: var(--primary-color-light);
     border-radius: 6px;
     transition: var(--transition-5);
 }
 
+/*Define search field*/
 .search-box input{
     height: 100%;
     width: 100%;
@@ -187,11 +193,13 @@ body.dark .sidebar header .toggle{
     color: var(--sidebar-color);
 }
 
+/*Change color of icon and text if item gets hovered in dark-mode*/
 body.dark .sidebar li a:hover .icon,
 body.dark .sidebar li a:hover .text{
     color: var(--text-color);
 }
 
+/*Define whole navbar excluding header*/
 .sidebar .menu-bar{
     height: calc(100% - 50px);
     display: flex;
@@ -199,6 +207,7 @@ body.dark .sidebar li a:hover .text{
     justify-content: space-between;
 }
 
+/*Define whole dark mode menu point*/
 .menu-bar .mode{
     position: relative;
     border-radius: 6px;
@@ -206,6 +215,7 @@ body.dark .sidebar li a:hover .text{
     transition: var(--transition-5);
 }
 
+/*Define element containing images of dark mode*/
 .menu-bar .mode .light-dark{
     height: 50px;
     width: 60px;
@@ -213,11 +223,13 @@ body.dark .sidebar li a:hover .text{
     align-items: center;
 }
 
+/*Define images of dark mode, so sun and moon*/
 .menu-bar .mode i{
     position: absolute;
     transition: var(--transition-3);
 }
 
+/*Show moon by default*/
 .menu-bar .mode i.moon{
     opacity: 0;
 }
@@ -231,9 +243,10 @@ body.dark .menu-bar .mode i.moon{
 body.dark .menu-bar .mode i.sun{
     opacity: 0;
 }
+
 /*
-.mode vs .bottom-content
- */
+Defining dark-mode toggle-switch properties
+*/
 .menu-bar .mode .toggle-switch{
     position: absolute;
     right: 0;
@@ -247,7 +260,9 @@ body.dark .menu-bar .mode i.sun{
     background: var(--primary-color-light);
     transition: var(--transition-5);
 }
-
+/*
+Defining dark-mode switch itself
+*/
 .toggle-switch .switch{
     position: relative;
     height: 22px;
