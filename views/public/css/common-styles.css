@@ -1,9 +1,7 @@
+/*Hiding aside on right if screen is small*/
 @media (max-width: 800px) {
     aside{
         opacity: 0;
-    }
-    .mainContent{
-        margin-right: 0;
     }
 }
 @media (min-width: 801px) {
