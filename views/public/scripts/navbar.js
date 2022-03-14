@@ -14,6 +14,12 @@ const modeText = body.querySelector(".mode-text");
 // Add click event to open/close button of sidebar to open/close sidebar
 toggle.addEventListener("click", () => {
     sidebar.classList.toggle("close");
+
+    if (sidebar.classList.contains("close")) {
+        localStorage.setItem('closed', 'enabled');
+    } else {
+        localStorage.setItem('closed', 'disabled');
+    }
 });
 
 // Add click event to search button to expand(open) sidebar
@@ -39,4 +45,9 @@ if(localStorage.getItem('darkMode') === 'enabled'){
     document.body.classList.add('no_transition')
     document.body.classList.add('dark');
     setTimeout(() => document.body.classList.remove("no_transition"), 1);
+}
+if(localStorage.getItem('closed') === 'enabled'){
+    sidebar.classList.add('no_transition')
+    sidebar.classList.add('close');
+    setTimeout(() => sidebar.classList.remove("no_transition"), 1);
 }
