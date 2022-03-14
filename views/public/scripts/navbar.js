@@ -25,6 +25,7 @@ toggle.addEventListener("click", () => {
 // Add click event to search button to expand(open) sidebar
 searchBtn.addEventListener("click", () => {
     sidebar.classList.remove("close");
+    localStorage.setItem('closed', 'disabled');
 });
 
 // Add click event to mode switch to switch between light and dark mode
