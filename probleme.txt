@@ -40,8 +40,8 @@ Tobias
 	und Pushen/Mergen der Changes, was jedoch immer gut kommuniziert wurde und behoben werden konnte.
 
 verwendete Technologien:
-    NodeJS wurde verwendet und die Seiten wurden alle hinter get endpunkte gelegt. Dies gibt uns maximale flexibilität,
-    wie wir welchen content an die user geben.
+    NodeJS wurde verwendet und die Seiten wurden alle hinter GET endpunkte gelegt. Dies gibt uns maximale Flexibilität,
+    wie wir welchen content an die user liefern.
 
     Hand in Hand damit geht PUG, welches wir für die templates benutzt haben, um sowohl code duplication durch vererbung
     zu verhindern und das dynamische Rendern der Seiten zu ermöglichen.
@@ -62,3 +62,4 @@ verwendete Technologien:
     Die /login und /register Seiten beinhalten Formulare, die beim Absenden ein POST request an den node.js server senden,
     der die Daten gegen interne Richtlinien abgleicht und dann entsprechend die Daten in die users.json einpflegt oder
     die session mit den Daten des users versieht, je nach Seite und Erfolg des Einloggens oder Registrierens.
+
