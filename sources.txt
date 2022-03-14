@@ -16,6 +16,7 @@ Tobi
         https://stackoverflow.com/questions/38295332/pug-jade-input-is-a-self-closing-element-input-but-contains-nested-conten
         https://www.w3schools.com/js/js_json.asp
         https://www.w3schools.com/js/js_json_syntax.asp
+        https://jsdoc.app/tags-type.html
     Navbar:
         https://www.w3schools.com/css/css_navbar_vertical.asp
         https://boxicons.com/usage

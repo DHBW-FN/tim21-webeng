@@ -34,16 +34,16 @@ app.use(sessions({
 /** Class representing a user. */
 class User {
     /**
-     * Create a user
+     * Creates a user
      *
-     * @param firstname - First name of the user
-     * @param lastname - Last name of the user
-     * @param username - Unique Username of the user
-     * @param password - Password of the user
-     * @param sex - Sex of the user male/female
-     * @param interests - Interests of the user
-     * @param comment - Custom comment of the user
-     * @param tos - Accepted the TOS true/false
+     * @param {String} firstname - First name of the user
+     * @param {String} lastname - Last name of the user
+     * @param {String} username - Unique Username of the user
+     * @param {String} password - Password of the user
+     * @param {String} sex - Sex of the user male/female
+     * @param {String} interests - Interests of the user
+     * @param {String} comment - Custom comment of the user
+     * @param {String} tos - Accepted the TOS on/off
      */
     constructor(firstname, lastname, username, password, sex, interests, comment, tos) {
         this.firstname = firstname;
@@ -58,8 +58,201 @@ class User {
 }
 
 /**
+ * Class representing a Module
+ */
+class Module {
+    /**
+     * Creates a module
+     *
+     * @param {Allgemein} allgemein - general properties
+     * @param {Pruefungsformen} pruefungsformen - exam modalities
+     * @param {Lerninhalt[]} lerninhalte - course content
+     * @param {Workload} workload - workload
+     * @param {Qualifikationsziele} qualifikationsziele - qualification goals
+     * @param {?String} voraussetzungen - prerequisites
+     * @param {Array.<String>} literatur - literature recommended
+     * @param {?Besonderheit[]} besonderheiten - special features about the course
+     */
+    constructor(
+        allgemein,
+        pruefungsformen,
+        lerninhalte,
+        workload,
+        qualifikationsziele,
+        voraussetzungen,
+        literatur,
+        besonderheiten
+    ) {
+        this.allgemein = allgemein;
+        this.pruefungsformen = pruefungsformen;
+        this.lerninhalte = lerninhalte;
+        this.workload = workload;
+        this.qualifikationsziele = qualifikationsziele;
+        this.voraussetzungen = voraussetzungen;
+        this.literatur = literatur;
+        this.besonderheiten = besonderheiten;
+    }
+}
+
+/**
+ * Class representing general properties od a module
+ */
+class Allgemein {
+    /**
+     * Create an object for general attributes of a module
+     *
+     * @param {String} name - name
+     * @param {String} ganzer_name - full name
+     * @param {String} modulnummer - modle identifier
+     * @param {Number} semester - semester
+     * @param {Number} moduldauer - duration
+     * @param {String} modulverantwortung - person responsible
+     * @param {Array.<String>} sprachen - languages
+     * @param {Array.<String>} lehrformen - teaching forms
+     * @param {Array.<String>} lehrmethoden - teaching methods
+     */
+    constructor(
+        name,
+        ganzer_name,
+        modulnummer,
+        semester,
+        moduldauer,
+        modulverantwortung,
+        sprachen,
+        lehrformen,
+        lehrmethoden
+    ) {
+        this.name = name;
+        this.ganzer_name = ganzer_name;
+        this.modulnummer = modulnummer;
+        this.semester = semester;
+        this.moduldauer = moduldauer;
+        this.modulverantwortung = modulverantwortung;
+        this.sprachen = sprachen;
+        this.lehrformen = lehrformen;
+        this.lehrmethoden = lehrmethoden;
+    }
+}
+
+/**
+ * Class representing pruefungsformen of a module
+ */
+class Pruefungsformen {
+    /**
+     * Create an object for exam modalities
+     *
+     * @param {String} pruefungsleistung - exam form (e.g. written, oral, project)
+     * @param {String} pruefungsumfang - exam scope
+     * @param {String} benotung - grading yes/no
+     */
+    constructor(
+        pruefungsleistung,
+        pruefungsumfang,
+        benotung,
+    ) {
+        this.pruefungsleistung = pruefungsleistung;
+        this.pruefungsumfang = pruefungsumfang;
+        this.benotung = benotung;
+    }
+}
+
+/**
+ * Class representing workload of a module
+ */
+class Workload {
+    /**
+     * Create an object for workload of a module
+     *
+     * @param {Number} total - total time
+     * @param {Number} praesenz - time in presence
+     * @param {Number} selbststudium - repetition time
+     * @param {Number} ects - ects worth
+     */
+    constructor(
+        total,
+        praesenz,
+        selbststudium,
+        ects
+    ) {
+        this.total = total;
+        this.praesenz = praesenz;
+        this.selbststudium = selbststudium;
+        this.ects = ects;
+    }
+}
+
+/**
+ * Class representing goals of a module
+ */
+class Qualifikationsziele {
+    /**
+     * Create an object for qualification goals
+     *
+     * @param {String} fachkompetenz - professional competence
+     * @param {String} methodenkompetenz - method competence
+     * @param {String} sozialkompetenz - social competence
+     * @param {String} handlungskompetenz - action competence
+     */
+    constructor(
+        fachkompetenz,
+        methodenkompetenz,
+        sozialkompetenz,
+        handlungskompetenz
+    ) {
+        this.fachkompetenz = fachkompetenz;
+        this.methodenkompetenz = methodenkompetenz;
+        this.sozialkompetenz = sozialkompetenz;
+        this.handlungskompetenz = handlungskompetenz;
+    }
+}
+
+/**
+ * Class representing teaching content
+ */
+class Lerninhalt {
+    /**
+     * Create an object for teaching content
+     *
+     * @param {String} einheit - name of the unit
+     * @param {Number} praesenzzeit - time spent in presence
+     * @param {Number} selbststudium - time spent repeating at home
+     * @param {Array.<String>} inhalte - teaching content
+     */
+    constructor(
+        einheit,
+        praesenzzeit,
+        selbststudium,
+        inhalte
+    ) {
+        this.einheit = einheit;
+        this.praesenzzeit = praesenzzeit;
+        this.selbststudium = selbststudium;
+        this.inhalte = inhalte;
+    }
+}
+
+/**
+ * Class representing a special comment of a module
+ */
+class Besonderheit {
+    /**
+     * Create a special info
+     *
+     * @param {String} name - name(heading)
+     * @param {Array.<String>} content - content
+     */
+    constructor(
+        name,
+        content
+    ) {
+        this.name = name;
+        this.content = content;
+    }
+}
+
+/**
  * Get users.json representation
- * @returns {*[]|any} - A list of all registered users
+ * @returns {User[]} - A list of all registered users
  */
 function getUsers() {
     if (fs.existsSync("users.json")) {
@@ -78,7 +271,7 @@ function getUsers() {
 /**
  * Get a user of users.json by username
  * @param username - The unique username of the user to get
- * @returns {boolean|*|any} - The user object of exists, otherwise false
+ * @returns {User|boolean} - The user object if exists, otherwise false
  */
 function getUserByUsername(username) {
     let users = getUsers();
@@ -92,7 +285,7 @@ function getUserByUsername(username) {
 
 /**
  * Get modules.json representation
- * @returns {*[]|any}
+ * @returns {Module[]} A JSON representation of the modules
  */
 function getModules() {
     if (fs.existsSync("modules.json")) {
