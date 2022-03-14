@@ -2,3 +2,35 @@ extends layout
 block append head
     link(rel='stylesheet', href='/css/modules.css')
     title Modulübersicht
+block content
+    p Klicken Sie auf eines der unten aufgeführten Module, um Informationen über Verlauf, Lehrformen, Prüfung, Inhalt und Wertung des Modules zu erhalten:
+    a(href='/modules/mathe')
+        #img_container_mathe1.overview_big_block
+            .blurred_text_container
+                h1.module_field
+                    span Mathe
+    a(href='/modules/theoretischeInformatik')
+        #img_container_theoretischeInformatik1.overview_big_block
+            .blurred_text_container
+                h1.module_field
+                    span Theoretische Informatik
+    a(href='/modules/programmieren')
+        #img_container_programmieren1.overview_big_block
+            .blurred_text_container
+                h1.module_field
+                    span Programmieren
+    a(href='/modules/bwl')
+        #img_container_bwl1.overview_big_block
+            .blurred_text_container
+                h1.module_field
+                    span BWL
+    a(href='/modules/webEngineering')
+        #img_container_webEngineering1.overview_big_block
+            .blurred_text_container
+                h1.module_field
+                    span Web Engineering
+    a(href='/modules/elektrotechnik')
+        #img_container_elektrotechnik1.overview_big_block
+            .blurred_text_container
+                h1.module_field
+                    span Elektrotechnik

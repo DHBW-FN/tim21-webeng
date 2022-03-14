@@ -1,4 +1,3 @@
-
 hr {
     border: 1px solid var(--accent-color);
     background-color: var(--accent-color);
@@ -18,7 +17,8 @@ body.dark .mainContent {
 
 .small_block,
 .middle_block,
-.big_block{
+.big_block,
+.overview_big_block{
     float: left;
     border: 2px solid var(--shadow-color);
     border-radius: 10px;
@@ -45,6 +45,22 @@ body.dark .mainContent {
     width: 92%;
     min-width: 403px;
     height: auto;
+}
+
+.module_field span{
+    background-color: rgba(58, 59, 60, 0.75);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.overview_big_block{
+    color: var(--accent-color);
+    width: 92%;
+    height: 100px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    position: relative;
 }
 
 #img_container_webEngineering1{
