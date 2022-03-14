@@ -469,16 +469,6 @@ app.get('/modules/:module', (req, res) => {
  */
 app.get('/calendar', (req, res) => {
     const events = ical.sync.parseFile('TIM21.ics');
-    // TODO remove debugging log
-    // for (const event of Object.values(events)){
-    //     if (event !== undefined){
-    //         console.log(
-    //             'Summary: ' + event.summary +
-    //             '\nStart Date: ' + event.start +
-    //             '\n'
-    //         );
-    //     }
-    // }
 
     res.render("calendar", {
         events: events

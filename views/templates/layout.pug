@@ -19,7 +19,7 @@ nav.sidebar
             ul.menu-links
                 li.search-box
                     i.bx.bx-search.icon
-                    input(type='search', placeholder='Search...')
+                    input#searchbar(onkeyup='search_calendar()', type='search', placeholder='Search...')
                 li.nav-link
                     a(href='/')
                         i.bx.bx-home.icon
@@ -74,3 +74,4 @@ section.home
                 li Info2
                 li Info3
 script(src='/scripts/navbar.js')
+script(src='/scripts/calendar.js')
