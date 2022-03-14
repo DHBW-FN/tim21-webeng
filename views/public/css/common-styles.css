@@ -27,6 +27,7 @@
     --transition-5: all 0.5s ease;
 }
 
+/*Redefining colors in dark-mode*/
 body.dark{
     --body-color: #18191A;
     --sidebar-color: #242526;
@@ -36,6 +37,7 @@ body.dark{
     --text-color: #CCC;
 }
 
+/*Default content formatting*/
 .home{
     color: var(--text-color);
     padding: 15px;

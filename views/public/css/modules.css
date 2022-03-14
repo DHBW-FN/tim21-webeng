@@ -66,6 +66,7 @@ body.dark .mainContent {
     position: relative;
 }
 
+/*Defining containers filled with images*/
 #img_container_webEngineering1{
     background-image: url(../assets/picture_webEngineering.png);
 }

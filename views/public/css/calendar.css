@@ -6,6 +6,7 @@
     border-spacing: 1em;
 }
 
+/*Formatting each row of calendar entries*/
 .calendar .calendarEntry{
     outline: thin solid;
 }
