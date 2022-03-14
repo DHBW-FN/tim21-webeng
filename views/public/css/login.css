@@ -25,7 +25,7 @@ a:hover {
     color: var(--nav-hovering-color);
 }
 
-.middle{
+.mainContent{
     text-align: center;
     padding-top: 20px;
     color: var(--text-color)
