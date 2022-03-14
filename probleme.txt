@@ -37,5 +37,28 @@ Tobias
 
 	Da wir Git als Versionskontrollsoftware benutzt haben war das zusammenarbeiten meist sehr gut,
 	weil nicht jeder Erfahrung mit git hatte, gab es ab und zu Probleme bei dem Benutzen des korrekten branches
-	und Pushen/Mergen der Changes, was jedoch immer gut komuniziert wurde und behoben werden konnte.
+	und Pushen/Mergen der Changes, was jedoch immer gut kommuniziert wurde und behoben werden konnte.
 
+verwendete Technologien:
+    NodeJS wurde verwendet und die Seiten wurden alle hinter get endpunkte gelegt. Dies gibt uns maximale flexibilität,
+    wie wir welchen content an die user geben.
+
+    Hand in Hand damit geht PUG, welches wir für die templates benutzt haben, um sowohl code duplication durch vererbung
+    zu verhindern und das dynamische Rendern der Seiten zu ermöglichen.
+
+    Die Daten werden alle serverseitig lokal gehalten. Die User Informationen in der users.json, die modulinformationen
+    in der modules.json, diverse Bilder als .png und .jpeg, sowie die TIM21.ics Datei, die für den Kalender benutzt wird.
+
+    Die Modulinformationen in der modules.json zusammen mit dem pug template module.pug und node.js ermöglichen es uns
+    einen Endpunkt /modules/:module zu erstellen, der dynamisch mit dem module.pug template und den Daten, die in der
+    modules.json gespeichert sind Seiten zu erzeugen, die mit genau den Daten für das entsprechende Modul gefüllt sind.
+
+    Ähnlich funktioniert es auf der /calendar Seite, wo durch ein Node.js modul 'node-ical' die TIM21.ics gelesen
+    und geparst wird und dann wieder mit Node.js und einem entsprechenden calendar.pug template zu einer Seite aufbereitet
+    wird, die dynamisch die Informationen aus der Kalenderdatei liest und anzeigt. Zusätzlich sind diese Einträge durch
+    ein clientseitiges JavaScript Skript, welches die Informationen aus der Suche des linken Menüs nutzt und
+    Einträge, die nicht mit der Eingabe übereinstimmen ausblenden.
+
+    Die /login und /register Seiten beinhalten Formulare, die beim Absenden ein POST request an den node.js server senden,
+    der die Daten gegen interne Richtlinien abgleicht und dann entsprechend die Daten in die users.json einpflegt oder
+    die session mit den Daten des users versieht, je nach Seite und Erfolg des Einloggens oder Registrierens.
