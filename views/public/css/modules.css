@@ -1,3 +1,4 @@
+/* Underlinings */
 hr {
     border: 1px solid var(--accent-color);
     background-color: var(--accent-color);
@@ -26,13 +27,15 @@ body.dark .mainContent {
     margin: 10px;
     padding: 8px;
     box-shadow: 2px 2px 2px 2px var(--shadow-color);
-    color: var(--text-color)
+    color: var(--text-color);
+    word-wrap: break-word;
 }
 
 .small_block{
     width: 28%;
     min-width: 185px;
     min-height: 300px;
+    word-wrap: break-word;
 }
 
 .middle_block{
