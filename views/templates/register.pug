@@ -19,11 +19,12 @@ block content
                 input#registerSexMale(type='radio', name='sex', value='male')
                 label(for='registerSexFemale') Female
                 input#registerSexFemale(type='radio', name='sex', value='female')
-            label(for='registerInterests') Interests
-            select#registerInterests(name='interests', size='3')
-                option(value='school') School
-                option(value='friends') Friends
-                option(value='gaming') Gaming
+            label(for='registerFocus') Focus
+            select#registerFocus(name='focus', size='4')
+                option(value='tim') TIM
+                option(value='tis') TIS
+                option(value='tit') TIT
+                option(value='tik') TIK
             label(for='registerComment') Comment:
             textarea#registerComment(name='comment', form='registerForm', maxlength='100', placeholder=' Enter text here...')
             label(for='registerTos') Accept Terms of Service

@@ -41,17 +41,17 @@ class User {
      * @param {String} username - Unique Username of the user
      * @param {String} password - Password of the user
      * @param {String} sex - Sex of the user male/female
-     * @param {String} interests - Interests of the user
+     * @param {String} focus - focus of the user
      * @param {String} comment - Custom comment of the user
      * @param {String} tos - Accepted the TOS on/off
      */
-    constructor(firstname, lastname, username, password, sex, interests, comment, tos) {
+    constructor(firstname, lastname, username, password, sex, focus, comment, tos) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.username = username;
         this.password = password;
         this.sex = sex;
-        this.interests = interests;
+        this.focus = focus;
         this.comment = comment;
         this.tos = tos;
     }
@@ -343,11 +343,11 @@ app.post('/api/register',(req, res) => {
     let username = req.body.username;
     let password = req.body.password;
     let sex = req.body.sex;
-    let interests = req.body.interests;
+    let focus = req.body.focus;
     let comment = req.body.comment;
     let tos = req.body.tos;
 
-    const newUser = new User(firstname, lastname, username, password, sex, interests, comment, tos);
+    const newUser = new User(firstname, lastname, username, password, sex, focus, comment, tos);
 
     if (!newUser.firstname.match(reName)) {
         console.log("First Name invalid!")
@@ -469,7 +469,6 @@ app.get('/modules/:module', (req, res) => {
  */
 app.get('/calendar', (req, res) => {
     const events = ical.sync.parseFile('TIM21.ics');
-
     // TODO remove debugging log
     // for (const event of Object.values(events)){
     //     if (event !== undefined){
