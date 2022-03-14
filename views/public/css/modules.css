@@ -1,31 +1,25 @@
 
 hr {
-    border: 1px solid var(--underline-color);
-    background-color: var(--underline-color);
+    border: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
 }
 
 /* Defining colors used in modules.css */
-:root {
-    --underline-color: #e2001a;
+.mainContent {
     --background-color: lightgrey;
     --shadow-color: grey;
-    --text-color: black;
 }
 
 /* Redefining colors for dark mode */
-body.dark {
+body.dark .mainContent {
     --background-color: #3A3B3C;
+    --text-color: #CCC;
 }
 
-header {
-    color: var(--text-color);
-}
-
-.small_block{
+.small_block,
+.middle_block,
+.big_block{
     float: left;
-    width: 28%;
-    min-width: 185px;
-    min-height: 300px;
     border: 2px solid var(--shadow-color);
     border-radius: 10px;
     background-color: var(--background-color);
@@ -35,32 +29,22 @@ header {
     color: var(--text-color)
 }
 
+.small_block{
+    width: 28%;
+    min-width: 185px;
+    min-height: 300px;
+}
+
 .middle_block{
-    float: left;
     width: 60%;
     min-width: 403px;
     height: 300px;
-    border: 2px solid var(--shadow-color);
-    border-radius: 10px;
-    background-color:var(--background-color);
-    margin: 10px;
-    padding: 8px;
-    box-shadow: 2px 2px 2px 2px var(--shadow-color);
-    color: var(--text-color)
 }
 
 .big_block{
-    float: left;
     width: 92%;
     min-width: 403px;
     height: auto;
-    border: 2px solid var(--shadow-color);
-    border-radius: 10px;
-    background-color:var(--background-color);
-    margin: 10px;
-    padding: 8px;
-    box-shadow: 2px 2px 2px 2px var(--shadow-color);
-    color: var(--text-color)
 }
 
 #img_container_webEngineering1{
