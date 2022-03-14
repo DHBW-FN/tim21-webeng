@@ -1,3 +1,8 @@
+/**
+ * Modify navbar and add functionality to elements
+ *
+ * @type {HTMLBodyElement}
+ */
 // Defining and getting object to later modify
 const body = document.querySelector("body");
 const sidebar = body.querySelector(".sidebar");
@@ -29,6 +34,7 @@ modeSwitch.addEventListener("click", () => {
     }
 });
 
+// Load darkMode value from localstorage and set darkMode if enabled
 if(localStorage.getItem('darkMode') === 'enabled'){
     document.body.classList.add('no_transition')
     document.body.classList.add('dark');
