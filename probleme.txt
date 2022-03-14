@@ -63,3 +63,12 @@ verwendete Technologien:
     der die Daten gegen interne Richtlinien abgleicht und dann entsprechend die Daten in die users.json einpflegt oder
     die session mit den Daten des users versieht, je nach Seite und Erfolg des Einloggens oder Registrierens.
 
+    Das Navigationsmenü links am Rand wird im layout.pug definiert und alle anderen layouts erweitern dieses.
+    Dies wurde durch einen 'block content' ermöglicht, der in den templates, die dieses erweitern ersetzt wird durch
+    den gewünschten Inhalt.
+    Das Layout ist einklappbar und bietet die Möglichkeit den dark-mode zu aktivieren. Dies wird über eventListener
+    auf verschiedenen Elementen der Navbar realisiert, die im Falle des dark-modes elementen eine weitere Klasse
+    zuweisen, wodurch mit entsprechendem css styling das layout verändert wird.
+    Das Einklappen funktioniert auf ähnlicher weise.
+    Hier war es eine Herausforderung den content so zu gestalten, dass bei eingeklapptem Menü alles korrekt
+    verschoben wird und nichts verschwindet oder übersteht.
