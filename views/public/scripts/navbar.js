@@ -22,7 +22,15 @@ modeSwitch.addEventListener("click", () => {
 
     if (body.classList.contains("dark")) {
         modeText.innerText = "Light Mode";
+        localStorage.setItem('darkMode', 'enabled');
     } else {
         modeText.innerText = "Dark Mode";
+        localStorage.setItem('darkMode', 'disabled');
     }
 });
+
+if(localStorage.getItem('darkMode') === 'enabled'){
+    document.body.classList.add('no_transition')
+    document.body.classList.add('dark');
+    setTimeout(() => document.body.classList.remove("no_transition"), 1);
+}

@@ -23,6 +23,14 @@
     --transition-5: all 0.5s ease;
 }
 
+.no_transition * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
 body{
     height: 100vh;
     background: var(--body-color);
