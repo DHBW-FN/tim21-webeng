@@ -1,0 +1,29 @@
+#registerForm{
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 1rem;
+    max-width: 25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+#registerSubmit{
+    grid-column: span 2;
+    border-radius: 20px;
+}
+
+/* Redefining colors for dark mode */
+body.dark {
+    --background-color: #3A3B3C;
+    --text-color: #CCC;
+}
+
+.middle{
+    text-align: center;
+    padding-top: 20px;
+    color: var(--text-color)
+}
+
+.register{
+    margin: auto;
+}

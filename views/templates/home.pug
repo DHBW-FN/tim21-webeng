@@ -1,0 +1,23 @@
+extends layout
+block append head
+    title Startseite
+
+block content
+    main#landingPageMain
+        h1 Willkommen bei Ihrem persönlichen Modul-Planer
+        h2 Login
+        p
+            | Loggen Sie sich ein oder registrieren Sie sich um die Webseite auf sich anzupassen
+        ul
+            li
+                a(href='/login') Hier geht's zum Login
+            li
+                a(href='/register') Oder registrieren Sie sich hier
+        br
+        h2 Kalender
+        p
+            | In der Navigationsleiste am linken Bildschirmrand können Sie Ihren Vorlesungsplan ansehen.
+        br
+        h2 Module
+        p
+            | Um genauere Informationen zu Ihren Modulen zu erhalten, wählen Sie in der Navigationsleiste Ihr Modul.

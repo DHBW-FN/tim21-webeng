@@ -1,0 +1,67 @@
+doctype html
+head
+    block head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet', href='/css/common-styles.css')
+        link(rel='stylesheet', href='/css/sidebar-nav-style.css')
+        link(href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css', rel='stylesheet')
+nav.sidebar
+    header
+        .menu-header
+            span.image
+                img(src='/images/logo.jpg', alt='logo')
+            .text.header-text
+                span.name Modul-Planer
+        i.bx.bx-chevron-right.toggle
+    .menu-bar
+        .menu
+            ul.menu-links
+                li.search-box
+                    i.bx.bx-search.icon
+                    input#searchbar(onkeyup='search_calendar()', type='search', placeholder='Search...')
+                li.nav-link
+                    a(href='/')
+                        i.bx.bx-home.icon
+                        span.text.nav-text Home
+                li.nav-link
+                    a(href='/login')
+                        i.bx.bx-log-in.icon
+                        span.text.nav-text Login
+                li.nav-link
+                    a(href='/register')
+                        i.bx.bx-user-plus.icon
+                        span.text.nav-text Register
+                li.nav-link
+                    a(href='/calendar')
+                        i.bx.bx-calendar.icon
+                        span.text.nav-text Calendar
+                li.nav-link
+                    a(href='/modules')
+                        i.bx.bxs-graduation.icon
+                        span.text.nav-text Modules
+        .bottom-menu
+            ul.menu-links
+                li
+                    a(href='/logout')
+                        i.bx.bx-log-out.icon
+                        span.text.nav-text Logout
+                li.mode
+                    .light-dark
+                        i.bx.bx-moon.icon.sun
+                        i.bx.bx-sun.icon.moon
+                    span.mode-text.text Dark Mode
+                    .toggle-switch
+                        span.switch
+section.home
+    .mainContent
+        block content
+    block aside
+        aside
+            h3 Nächste Prüfung:
+            ul#exams_list.aside_list
+                li 25.03.2022 - BWL
+                li 28.03.2022 - Mathe
+                li 30.02.2022- Theo. Inf.
+script(src='/scripts/navbar.js')
+script(src='/scripts/calendar.js')

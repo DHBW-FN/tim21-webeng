@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.sidebar{
+    --text-color: #707070;
+}
+
+body.dark .sidebar{
+    --text-color: #CCC;
+}
+
+.no_transition * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
+body{
+    height: 100vh;
+    background: var(--body-color);
+    transition: var(--transition-5);
+}
+
+/*
+Sidebar
+ */
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+    transition: var(--transition-5);
+    z-index: 100;
+}
+
+.sidebar.close{
+    width: 88px;
+}
+
+/*
+Reusable
+ */
+.sidebar .text{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: var(--transition-3);
+    white-space: nowrap;
+    opacity: 1;
+}
+
+/*Remove text if sidebar is closed*/
+.sidebar.close .text{
+    opacity: 0;
+}
+
+.sidebar .image{
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar li{
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 20px;
+}
+
+.sidebar li .icon,
+.sidebar li .text{
+    color: var(--text-color);
+    transition: var(--transition-2);
+}
+
+.sidebar header{
+    position: relative;
+}
+
+.sidebar .menu-header img{
+    width: 40px;
+    border-radius: 6px;
+}
+
+.sidebar header .menu-header{
+    display: flex;
+    align-items: center;
+}
+
+header .menu-header .header-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text .name{
+    font-weight: 600;
+}
+
+/*Shape open/close toggle of sidebar*/
+.sidebar header .toggle{
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 25px;
+    width: 25px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--sidebar-color);
+    font-size: 22px;
+    transition: var(--transition-3);
+}
+
+/*Flip open/close toggle if sidebar is closed*/
+.sidebar.close header .toggle{
+    transform: translateY(-50%);
+}
+
+/*Change color of open/close toggle in dark mode*/
+body.dark .sidebar header .toggle{
+    color: var(--text-color);
+}
+
+.sidebar .menu{
+    margin-top: 35px;
+}
+
+.sidebar .search-box{
+    background: var(--primary-color-light);
+    border-radius: 6px;
+    transition: var(--transition-5);
+}
+
+.search-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    background: var(--primary-color-light);
+    transition: var(--transition-5);
+}
+
+.sidebar li a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: var(--transition-4);
+}
+
+.sidebar li a:hover{
+    background-color: var(--primary-color);
+}
+
+/*Change color of icon and text if item gets hovered*/
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text{
+    color: var(--sidebar-color);
+}
+
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text{
+    color: var(--text-color);
+}
+
+.sidebar .menu-bar{
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-bar .mode{
+    position: relative;
+    border-radius: 6px;
+    background: var(--primary-color-light);
+    transition: var(--transition-5);
+}
+
+.menu-bar .mode .light-dark{
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-bar .mode i{
+    position: absolute;
+    transition: var(--transition-3);
+}
+
+.menu-bar .mode i.moon{
+    opacity: 0;
+}
+
+/*Hide moon icon if dark mode is on*/
+body.dark .menu-bar .mode i.moon{
+    opacity: 1;
+}
+
+/*Show sun icon if dark mode is off*/
+body.dark .menu-bar .mode i.sun{
+    opacity: 0;
+}
+/*
+.mode vs .bottom-content
+ */
+.menu-bar .mode .toggle-switch{
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60px;
+    cursor: pointer;
+    border-radius: 6px;
+    background: var(--primary-color-light);
+    transition: var(--transition-5);
+}
+
+.toggle-switch .switch{
+    position: relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 25px;
+    background: var(--toggle-color);
+    transition: var(--transition-5);
+}
+
+/*Add before to dark mode switch*/
+.switch::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background: var(--sidebar-color);
+    transition: var(--transition-3);
+}
+
+/*Add before to dark mode switch in dark mode*/
+body.dark .switch::before{
+    left: 24px;
+}
+
+/*This is how content besides navbar is formatted by default*/
+.home{
+    position: relative;
+    height: 100vh;
+    left: 250px;
+    width: calc(100% - 250px);
+    background: var(--body-color);
+    transition: var(--transition-5);
+}
+
+.home .text{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 8px 40px;
+}
+
+/*This expands content besides navbar if navbar is closed*/
+.sidebar.close ~ .home{
+    left: 88px;
+    width: calc(100% - 88px);
+}

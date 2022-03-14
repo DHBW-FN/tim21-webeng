@@ -1,0 +1,74 @@
+Tobias
+	Pfade in großen Projekten, wo sich die Struktur,
+	gerade am Anfang noch häufig verändert, korrekt anzugeben ist sehr schwierig
+		-absolut vs relativ
+		-app.use(express.static("views/public")); verändert die auch nochmal
+
+	NodeJs und Express richtig zu konfigurieren war sehr anspruchsvoll
+		-jede Anleitung/Doku die man findet macht es etwas anders
+			-app vs server vs router
+
+	Reguläre Ausdrücke, gerade für die Registrierungsdatenüberprüfung sind anfällig für Fehler
+	und auch nur ein falsch gesetztes Zeichen macht alles kaputt
+		-Lösungen waren meistens look-aheads
+
+	Pug templates sind relativ einfach gefallen, die einzigen Probleme waren meistens
+	mit den von NodeJs übergebenen Parametern und dem richtigen einbinden und iterieren.
+
+	CSS styling ist sehr unübersichtlich
+		-alles wird von irgendwo überschrieben
+			-man muss so genau wie möglich seine elemente definieren um das zu vermeiden
+		-erst spät mit variablen ür textfarbe etc. angefangen, große Erleichterung
+
+	NodeJS Endpunkte definieren war, sobald man es einmal verstanden hat relativ einfach
+
+	Sessions von Usern korrekt zu halten und tracken war bis ich express-session und cookie-parser gefunden habe
+	sehr schwierig und dort habe ich mich etwas verrannt.
+
+	Das Lesen von Textdateien in nodejs war relativ simpel, das korrekte parsen und aufbereiten der Daten
+	jedoch sehr anspruchsvoll.
+
+	JSDoc lässt sich unter Windows sehr schwer ausführen, über powershell mit administrator und
+	policy verändern.
+
+	Wir haben die Idee gehabt noch die ical Datei unter /calendar einzubinden.
+	Mussten aus Zeitgründen jedoch davon absehen.
+	Das Auslesen und die Einbindung in den Get Endpoint wurden jedoch umgesetzt.
+
+	Da wir Git als Versionskontrollsoftware benutzt haben war das zusammenarbeiten meist sehr gut,
+	weil nicht jeder Erfahrung mit git hatte, gab es ab und zu Probleme bei dem Benutzen des korrekten branches
+	und Pushen/Mergen der Changes, was jedoch immer gut kommuniziert wurde und behoben werden konnte.
+
+verwendete Technologien:
+    NodeJS wurde verwendet und die Seiten wurden alle hinter GET endpunkte gelegt. Dies gibt uns maximale Flexibilität,
+    wie wir welchen content an die user liefern.
+
+    Hand in Hand damit geht PUG, welches wir für die templates benutzt haben, um sowohl code duplication durch vererbung
+    zu verhindern und das dynamische Rendern der Seiten zu ermöglichen.
+
+    Die Daten werden alle serverseitig lokal gehalten. Die User Informationen in der users.json, die modulinformationen
+    in der modules.json, diverse Bilder als .png und .jpeg, sowie die TIM21.ics Datei, die für den Kalender benutzt wird.
+
+    Die Modulinformationen in der modules.json zusammen mit dem pug template module.pug und node.js ermöglichen es uns
+    einen Endpunkt /modules/:module zu erstellen, der dynamisch mit dem module.pug template und den Daten, die in der
+    modules.json gespeichert sind Seiten zu erzeugen, die mit genau den Daten für das entsprechende Modul gefüllt sind.
+
+    Ähnlich funktioniert es auf der /calendar Seite, wo durch ein Node.js modul 'node-ical' die TIM21.ics gelesen
+    und geparst wird und dann wieder mit Node.js und einem entsprechenden calendar.pug template zu einer Seite aufbereitet
+    wird, die dynamisch die Informationen aus der Kalenderdatei liest und anzeigt. Zusätzlich sind diese Einträge durch
+    ein clientseitiges JavaScript Skript, welches die Informationen aus der Suche des linken Menüs nutzt und
+    Einträge, die nicht mit der Eingabe übereinstimmen ausblenden.
+
+    Die /login und /register Seiten beinhalten Formulare, die beim Absenden ein POST request an den node.js server senden,
+    der die Daten gegen interne Richtlinien abgleicht und dann entsprechend die Daten in die users.json einpflegt oder
+    die session mit den Daten des users versieht, je nach Seite und Erfolg des Einloggens oder Registrierens.
+
+    Das Navigationsmenü links am Rand wird im layout.pug definiert und alle anderen layouts erweitern dieses.
+    Dies wurde durch einen 'block content' ermöglicht, der in den templates, die dieses erweitern ersetzt wird durch
+    den gewünschten Inhalt.
+    Das Layout ist einklappbar und bietet die Möglichkeit den dark-mode zu aktivieren. Dies wird über eventListener
+    auf verschiedenen Elementen der Navbar realisiert, die im Falle des dark-modes elementen eine weitere Klasse
+    zuweisen, wodurch mit entsprechendem css styling das layout verändert wird.
+    Das Einklappen funktioniert auf ähnlicher weise.
+    Hier war es eine Herausforderung den content so zu gestalten, dass bei eingeklapptem Menü alles korrekt
+    verschoben wird und nichts verschwindet oder übersteht.

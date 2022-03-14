@@ -1,0 +1,11 @@
+.calendar th {
+    font-weight: normal;
+}
+
+.calendar table{
+    border-spacing: 1em;
+}
+
+.calendar .calendarEntry{
+    outline: thin solid;
+}

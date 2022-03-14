@@ -1,0 +1,463 @@
+{
+  "bwl": {
+    "allgemein": {
+      "name": "BWL",
+      "ganzer_name": "Betriebswirtschaftslehre (BWL) und Wahlunits",
+      "modulnummer": "T3INF1005",
+      "semester": 1,
+      "moduldauer": 2,
+      "modulverantwortung": "Prof. Dr. Jürgen Vollmer",
+      "sprachen": [
+        "Deutsch",
+        "Englisch"
+      ],
+      "lehrformen": [
+        "Vorlesung",
+        "Übung"
+      ],
+      "lehrmethoden": [
+        "Lehrvortrag",
+        "Diskussion",
+        "Gruppenarbeit",
+        "Projekt"
+      ]
+    },
+    "pruefungsformen": {
+      "pruefungsleistung": "Kombinierte Prüfung - Klausurarbeit (< 50 %)",
+      "pruefungsumfang": "Siehe Prüfungsordnung",
+      "benotung": "Ja"
+    },
+    "workload": {
+      "total": 150,
+      "praesenz": 84,
+      "selbststudium": 66,
+      "ects": 5
+    },
+    "qualifikationsziele": {
+      "fachkompetenz": "Die Studierenden haben Grundkenntnisse der Wirtschaftswissenschaften erworben und können ihre fachlichen Aufgaben im betrieblichen Kontext einordnen.",
+      "methodenkompetenz": "Die Studierenden haben ökonomische, interkulturelle und arbeitswissenschaftliche Grundkompetenzen für Beruf und Studium erworben.",
+      "sozialkompetenz": "Die Studierenden können ihre Standpunkte in einem (ggf. interdisziplinär und interkulturell zusammengesetzten) Team vertreten und respektieren andere Sichtweisen. Sie können sich selbst und ihre Projekte organisieren und mit Kritik und Konflikten angemessen umgehen.",
+      "handlungskompetenz": "Über die Sachkompetenz hinaus soll das Denken in fachübergreifenden Zusammenhängen geschult werden, sowie strategische Handlungskompetenz und unternehmerisches Denken vermittelt werden."
+    },
+    "lerninhalte": {
+      "lerninhalt1": {
+        "einheit": "Betriebswirtschaftslehre",
+        "praesenzzeit": 36,
+        "selbststudium": 28,
+        "inhalte": [
+          "Einführung in die theoretischen Ansätze und Methoden in der Betriebswirtschaftslehre",
+          "Ziele und Planung in der Betriebswirtschaftslehre",
+          "Führungsstile und konzepte",
+          "Rechtsformen",
+          "Bilanzen",
+          "Gewinn- und Verlustrechnung",
+          "Kostenrechnung",
+          " Finanzierung und Investition",
+          "Ganzheitliches Unternehmensplanspiel"
+        ]
+      }
+    },
+    "voraussetzungen": "keine",
+    "literatur": [
+      "Davis, M.: Scientific Papers and Presentations, Boston, London, San Diego",
+      "Eberhard, K.: Einführung in die Erkenntnis- und Wissenschaftstheorie, Stuttgart",
+      "Heydasch, T., Renner, K.-H.: Einführung in das wissenschaftliche Arbeiten; Fakultät für Kultur- und Sozialwissenschaften; FernUniversität Hagen, Hagen",
+      "H. W. Wieczorrek, P. Mertens: Management von IT Projekten, Springer",
+      "G. K. Kapur: Project Management for Information, Technology, Business and Certification, Prentice Hall",
+      "P. Mangold: IT-Projektmanagement kompakt, Spektrum Akademischer Verlag",
+      "Helmut Kohlert: Marketing für Ingenieure, Oldenbourg",
+      " Marion Steven: Bwl für Ingenieure, Oldenbourg",
+      "Jürgen Härdler: Betriebswirtschaftlehre für Ingenieure. Lehr- und Praxisbuch, Hanser Fachbuch",
+      "Adolf J. Schwab: Managementwissen für Ingenieure: Führung, Organisation, Existenzgründung, Springer",
+      "Managing Intercultural Conflict Effectively: Thousand Oaks, Sage - Roger Fisher, W. Ury und B.Patton: Getting to Yes , Penguin",
+      "Robert Gibson: Intercultural Business Communication, Cornelsen und Oxford - Nancy Adler: International Dimensions of Organizational Behavior, ITP - Geert\nHofstede, Cultures and Organizations, McGraw-Hill - Stella Ting: Toomey und John G. Oetzel"
+    ],
+    "besonderheiten": {
+      "entweder_oder": {
+        "name": "Entweder oder",
+        "content": [
+          "T3INF1005.0 - Schluesselqualifikationen als einzige Unit",
+          "T3INF1005.1 - Betriebswirtschaftlehre Pflicht und 2 weitere Units zur Wahl"
+        ]
+      },
+       "weitere_units": {
+         "name": "Weitere Units",
+         "content": [
+           "T3INF1005.2 - Fremdsprachen 1",
+           "T3INF1005.3 - Vortrags-, Lern- und Arbeitstechniken",
+           "T3INF1005.4 - Marketing 1",
+           "T3INF1005.5 - Marketing 2",
+           "T3INF1005.7 - Intercultural Communication 1",
+           "T3INF1005.8 - Intercultural Communication 2",
+           "T3INF1005.9 - Fremdsprachen 2",
+           "T3INF4103.1 - Projektmanagement 1",
+           "T3INF4103.2 - Projektmanagement 2",
+           "T3INF4116.1 - Einführung in technisch-wissenschaftliches Arbeiten"
+         ]
+       }
+    }
+  },
+  "elektrotechnik": {
+    "allgemein": {
+      "name": "Elektrotechnik",
+      "ganzer_name": "Elektrotechnik",
+      "modulnummer": "T3INF4104",
+      "semester": 1,
+      "moduldauer": 1,
+      "modulverantwortung": "Prof. Dr.-Ing. Thomas Neidlinger",
+      "sprachen": [
+        "Deutsch"
+      ],
+      "lehrformen": [
+        "Vorlesung",
+        "Übung"
+      ],
+      "lehrmethoden": [
+        "Lehrvortrag",
+        "Diskussion"
+      ]
+    },
+    "pruefungsformen": {
+      "pruefungsleistung": "Klausur",
+      "pruefungsumfang": "Siehe Pruefungsordnung",
+      "benotung": "Ja"
+    },
+    "workload": {
+      "total": 90,
+      "praesenz": 48,
+      "selbststudium": 42,
+      "ects": 3
+    },
+    "qualifikationsziele": {
+      "fachkompetenz": "Die Studierenden kennen die Grundlagen elektrotechnischer Größen und deren Einheiten, sowie Eigenschaften und Anwendungsbereiche von passiven Bauelementen. Sie kennen wichtige Sätze, Methoden und Berechnungsverfahren für elektrische Netzwerke in Gleich- und Wechselstromkreisen und können diese auf ausgewählte Probleme anwenden, Lösungsansätze finden und die Lösungen berechnen.",
+      "methodenkompetenz": "Die Studierenden sind mit Abschluss des Moduls in der Lage, für weitgehend standardisierte Anwendungsfälle in der Praxis die angemessene Methode auszuwählen und anzuwenden.",
+      "sozialkompetenz": "keine",
+      "handlungskompetenz": "keine"
+    },
+    "lerninhalte": {
+      "grundlagen": {
+        "einheit": "Grundlagen der Elektrotechnik",
+        "praesenzzeit": 48,
+        "selbststudium": 42,
+        "inhalte": [
+          "Elektrische Größen und ihre Einheiten",
+          "Das elektrische Feld",
+          "Gleichstromkreis, Zweipole",
+          "Lineare Netzwerke und Berechungsmethoden",
+          "Periodische und zeitabhängige Größen",
+          "Das magnetische Feld",
+          "Sprung- und Impulsantworten passiver Bauelemente",
+          "Wechselstromkreis"
+        ]
+      }
+    },
+    "voraussetzungen": "keine",
+    "literatur": [
+      "Grundgebiete der Elektrotechnik 1, A. Führer, K. Heidemann, W. Nerreter, Hanser",
+      "Grundgebiete der Elektrotechnik 2, A. Führer, K. Heidemann, W. Nerreter, Hanser",
+      "Theoretische Elektrotechnik, A. Reibiger, W. Mathis, K. Küpfmüller, Springer Vieweg"
+    ]
+  },
+  "mathe": {
+    "allgemein": {
+      "name": "Mathe",
+      "ganzer_name": "Mathe",
+      "modulnummer": "T3INF1001",
+      "semester": 1,
+      "moduldauer": 2,
+      "modulverantwortung": "Prof. Dr. Reinhold Hübl",
+      "sprachen": [
+        "Deutsch"
+      ],
+      "lehrformen": [
+        "Vorlesung",
+        "Übung"
+      ],
+      "lehrmethoden": [
+        "Lehrvortrag",
+        "Diskussion"
+      ]
+    },
+    "pruefungsformen": {
+      "pruefungsleistung": "Klausurarbeit(x2)",
+      "pruefungsumfang": "Siehe Pruefungsordnung",
+      "benotung": "Ja(x2)"
+    },
+    "workload": {
+      "total": 240,
+      "praesenz": 96,
+      "selbststudium": 144,
+      "ects": 8
+    },
+    "qualifikationsziele": {
+      "fachkompetenz": "Mit Abschluss des Moduls haben die Studierenden die Fähigkeit zu mathematischem Denken und Argumentieren entwickelt. Sie verfügen über ein Grundverständnis der diskreten Mathematik, der linearen Algebra und der Analysis einer reellen Veränderlichen. Sie sind in der Lage, diese Kenntnisse auf Probleme aus dem Bereich der Ingenieurwissenschaften und Informatik anzuwenden.",
+      "methodenkompetenz": "Mathematik fördert logisches Denken, klare Strukturierung, kreative explorierende Verhaltensweisen und Durchhaltevermögen.",
+      "sozialkompetenz": "keine",
+      "handlungskompetenz": "Die Studierenden sind in der Lage, naturwissenschaftlich-technische Vorgänge mit Hilfe der diskreten Mathematik, der linearen Algebra und der Analysis zu beschreiben. Sie beginnen, Algorithmen der numerischen Mathematik zu nutzen und diese in lauffähige Programme umzusetzen."
+    },
+    "lerninhalte": {
+      "lineareAlgebra": {
+        "einheit": "Lineare Algebra",
+        "praesenzzeit": 48,
+        "selbststudium": 72,
+        "inhalte": [
+          "Grundlagen der diskreten Mathematik",
+          "Grundlegende algebraische Strukturen",
+          "Vektorräume und lineare Abbildungen",
+          "Determinanten",
+          "Eigenwerte",
+          "Diagonalisierbarkeit",
+          "Anwendungsbeispiele."
+        ]
+      },
+      "analysis": {
+        "einheit": "Analysis",
+        "praesenzzeit": 48,
+        "selbststudium": 72,
+        "inhalte": [
+          "Folgen und Reihen",
+          "Stetigkeit - Differentialrechnung einer Veränderlichen im Reellen",
+          "Integralrechnung einer Veränderlichen im Reellen",
+          "Anwendungsbeispiele"
+        ]
+      }
+    },
+    "voraussetzungen": "keine",
+    "literatur": [
+      "Beutelspacher: Lineare Algebra, Vieweg+Teubner - Fischer: Lineare Algebra, Vieweg+Teubner - Hartmann: Mathematik für Informatiker, Vieweg+Teubner - Lau: Algebra und Diskrete Mathematik 1, Springer - Teschl, Teschl: Mathematik für Informatiker: Band 1. diskrete Mathematik und lineare Algebra, Springer - Kreußler, Pfister: Mathematik für Informatiker: Algebra, Analysis, Diskrete Strukturen, Springer",
+      "Estep: Angewandte Analysis in einer Unbekannten, Springer - Hartmann: Mathematik für Informatiker, Vieweg+Teubner - Hildebrandt: Analysis 1, Springer - Teschl, Teschl: Mathematik für Informatiker: Band 2. Analysis und Statistik, Springer"
+    ],
+    "besonderheiten": {
+      "default": {
+        "name": "Besonderheit",
+        "content": [
+          "Dieses Modul beinhaltet zusätzlich bis zu 24h begleitetes Selbststudium in Form von Übungsstunden, Laboren oder Projekten. Hierbei werden Übungsaufgaben und/oder vertiefende Aufgabenstellungen von den Studierenden bearbeitet."
+        ]
+      }
+    }
+  },
+  "programmieren": {
+    "allgemein": {
+      "name": "Programmieren",
+      "ganzer_name": "Programmieren",
+      "modulnummer": "T3INF1004",
+      "semester": 1,
+      "moduldauer": 2,
+      "modulverantwortung": "Prof. Dr. rer.nat. Alexander Auch",
+      "sprachen": [
+        "Deutsch"
+      ],
+      "lehrformen": [
+        "Vorlesung",
+        "Übung"
+      ],
+      "lehrmethoden": [
+        "Lehrvortrag",
+        "Diskussion",
+        "Gruppenarbeit"
+      ]
+    },
+    "pruefungsformen": {
+      "pruefungsleistung": "Programmentwurf",
+      "pruefungsumfang": "Siehe Prüfungsordnung",
+      "benotung": "Ja"
+    },
+    "workload": {
+      "total": 270,
+      "praesenz": 96,
+      "selbststudium": 174,
+      "ects": 9
+    },
+    "qualifikationsziele": {
+      "fachkompetenz": "Die Studierenden kennen die Grundelemente der prozeduralen und der objektorientierten Programmierung. Sie können die Syntax und Semantik dieser Sprachen und können ein Programmdesign selbstständig entwerfen, codieren und ihr Programm auf Funktionsfähigkeit testen. Sie kennen verschiedene Strukturierungsmöglichkeiten und Datenstrukturen und können diese exemplarisch anwenden.",
+      "methodenkompetenz": "Die Studierenden sind in der Lage, einfache Programme selbständig zu erstellen und auf Funktionsfähigkeit zu testen, sowie einfache Entwurfsmuster in ihren Programmentwürfen einzusetzen. Die Studierenden können eine Entwicklungsumgebung verwenden um Programme zu erstellen, zu strukturieren und auf Fehler hin zu untersuchen (inkl. Debugger).",
+      "sozialkompetenz": "Die Studierenden können ihren Programmentwurf sowie dessen Codierung im Team erläutern und begründen. Sie können existierenden Code analysieren und beurteilen. Sie können sich selbstständig in Entwicklungsumgebungen einarbeiten und diese zur Programmierung und Fehlerbehebung einsetzen.",
+      "handlungskompetenz": "Die Studierenden können eigenständig Problemstellungen der Praxis analysieren und zu deren Lösung Programme entwerfen, programmieren und testen."
+    },
+    "lerninhalte": {
+      "programmieren": {
+        "einheit": "Programmieren",
+        "praesenzzeit": 96,
+        "selbststudium": 174,
+        "inhalte": [
+          "Kenntnisse in prozeduraler Programmierung:",
+          "Algorithmenbeschreibung",
+          "Datentypen",
+          "E/A-Operationen und Dateiverarbeitung",
+          "Operatoren",
+          "Kontrollstrukturen",
+          "Funktionen",
+          "Stringverarbeitung",
+          "Strukturierte Datentypen",
+          "dynamische Datentypen",
+          "Zeiger",
+          "Speicherverwaltung",
+          "Kenntnisse in objektorientierter Programmierung:",
+          "objektorientierter Programmentwurf",
+          "Idee und Merkmale der objektorientierten Programmierung",
+          "Klassenkonzept",
+          "Operatoren",
+          "Überladen von Operatoren und Methoden",
+          "Vererbung und Überschreiben von Operatoren",
+          "Polymorphismus",
+          "Templates oder Generics",
+          "Klassenbibliotheken",
+          "Speicherverwaltung, Grundverständnis Garbage Collection"
+        ]
+      }
+    },
+    "voraussetzungen": "keine",
+    "literatur": [
+      "B.W. Kerninghan, D.M Richie: Programmieren in C, Hanser",
+      "R. Klima, S. Selberherr: Programmieren in C, Springer",
+      "Prinz, Crawford: C in a Nutshell, O'Reilly",
+      "Günster: Einführung in Java, Rheinwerk Computing",
+      "Habelitz: Programmieren lernen mit Java, Rheinwerk Computing",
+      "Ullenboom: Java ist auch eine Insel, Rheinwerk Computing",
+      "McConnell: Code Complete: A Practical Handbook of Software Construction, Microsoft Press"
+    ],
+    "besonderheiten": {
+      "default": {
+        "name": "Besonderheit",
+        "content": [
+          "Dieses Modul beinhaltet zusätzlich bis zu 24h begleitetes Selbststudium in Form von Übungsstunden, Laboren oder Projekten. Hierbei werden Übungsaufgaben und/oder vertiefende Aufgabenstellungen von den Studierenden bearbeitet."
+        ]
+      }
+    }
+  },
+  "theoretischeInformatik": {
+    "allgemein": {
+      "name": "Theoretische Informatik",
+      "ganzer_name": "Theoretische Informatik",
+      "modulnummer": "T3INF1002",
+      "semester": 1,
+      "moduldauer": 1,
+      "modulverantwortung": "Prof. Dr.rer.nat. Bernd Schwinn",
+      "sprachen": [
+        "Deutsch"
+      ],
+      "lehrformen": [
+        "Vorlesung",
+        "Übung"
+      ],
+      "lehrmethoden": [
+        "Lehrvortrag",
+        "Diskussion"
+      ]
+    },
+    "pruefungsformen": {
+      "pruefungsleistung": "Klausurarbeit",
+      "pruefungsumfang": "Siehe Prüfungsordnung",
+      "benotung": "Ja"
+    },
+    "workload": {
+      "total": 150,
+      "praesenz": 60,
+      "selbststudium": 90,
+      "ects": 5
+    },
+    "qualifikationsziele": {
+      "fachkompetenz": "Die Studierenden können die theoretischen Grundlagen der Aussage- und Prädikatenlogik verstehen. Die Studierenden verstehen die formale Spezifikation von Algorithmen und ordnen diese ein. Die Studierenden beherrschen das Modell der logischen Programmierung und wenden es an.",
+      "methodenkompetenz": "Die Studierenden haben die Kompetenzen erworben, komplexere Unternehmensanwendungen durch abstraktes Denken aufzuteilen und zu beherrschen sowie fallabhängig logisches Schließen und Folgern einzusetzen.",
+      "sozialkompetenz": "keine",
+      "handlungskompetenz": "Die Studierenden haben mit Abschluss des Moduls die Kompetenz erworben, sich mit Fachvertretern und Laien über Fachfragen und Aufgabenstellungen in den Bereichen Logik, logische Folgerung sowie Verifikation und abstraktes Denken auf wissenschaftlichem Niveau auszutauschen."
+    },
+    "lerninhalte": {
+      "grundlagen": {
+        "einheit": "Grundlagen und Logik",
+        "praesenzzeit": 60,
+        "selbststudium": 90,
+        "inhalte": [
+          "Algebraische Strukturen: Relationen, Ordnung, Abbildung",
+          "Formale Logik: Aussagenlogik, Prädikatenlogik",
+          "Algorithmentheorie; Komplexität, Rekusion, Terminierung, Korrektheit (mit Bezug zur Logik)",
+          "Grundkenntnisse der deklarativen (logischen/funktionalen/....) Programmierung"
+        ]
+      }
+    },
+    "voraussetzungen": "keine",
+    "literatur": [
+      "Siefkes, Dirk: Formalisieren und Beweisen: Logik für Informatiker, Vieweg",
+      "Kelly, J.: The Essence of Logic, Prentice Hall",
+      "Alagic, Arbib: The Design of Well-Structured and Correct Programs, Springer",
+      "Clocksin, W.F.; Mellish, C.S.: Programming in Prolog, Springer"
+    ]
+  },
+  "webEngineering": {
+    "allgemein": {
+      "name": "Web Engineering",
+      "ganzer_name": "Web Engineering",
+      "modulnummer": "T3INF4101",
+      "semester": 1,
+      "moduldauer": 1,
+      "modulverantwortung": "Prof. Dr. Rolf Assfalg",
+      "sprachen": [
+        "Deutsch"
+      ],
+      "lehrformen": [
+        "Labor",
+        "Vorlesung",
+        "Übung"
+      ],
+      "lehrmethoden": [
+        "Laborarbeit",
+        "Lehrvortrag",
+        "Diskussion"
+      ]
+    },
+    "pruefungsformen": {
+      "pruefungsleistung": "Klausurarbeit oder Kombinierte Prüfung",
+      "pruefungsumfang": "Siehe Prüfungsordnung",
+      "benotung": "Ja"
+    },
+    "workload": {
+      "total": 90,
+      "praesenz": 48,
+      "selbststudium": 42,
+      "ects":3
+    },
+    "qualifikationsziele": {
+      "fachkompetenz": "Die Studierenden setzen die erarbeiteten Theorien und Modelle in Bezug zu ihren Erfahrungen aus der beruflichen Praxis und können deren Grenzen und praktische Anwendbarkeit einschätzen.",
+      "methodenkompetenz": "Die Studierenden sind mit Abschluss des Moduls in der Lage, für weitgehend standardisierte Anwendungsfälle in der Praxis die angemessene Methode auszuwählen und anzuwenden. Sie kennen die Stärken und Schwächen der Methode in ihrem beruflichen Anwendungsfeld und können diese in konkreten Handlungssituationen gegeneinander abwägen.",
+      "sozialkompetenz": "Die Studierenden können sowohl eigenständig, also auch im Team zielorientiert und nachhaltig handeln.",
+      "handlungskompetenz": "keine"
+    },
+    "lerninhalte": {
+      "lerninhalt1": {
+        "einheit": "Web-Engineering ",
+        "praesenzzeit": 36,
+        "selbststudium": 39,
+        "inhalte": [
+          "Einführung in HTML und CSS in der aktuellen Version.",
+          "Grundlagen der Internetprotokolle und ihre zugehörigen Technologien.",
+          "Betrachtung einer Client-Programmiersprache und/oder einer oder mehrerer serverseitig eingesetzten Programmiersprache.",
+          "Optional: Dokumentauszeichnungssprache XML",
+          "Optional: Spezielle Dokumenttypen zur Darstellung von 2D oder 3D-Grafik.",
+          "Optional: Grundlagen der Mediengestaltung, soweit nicht bereits in anderen Modulen abgedeckt."
+        ]
+      }
+    },
+    "lerninhalt2": {
+      "einheit": "Labor Webengineering 1",
+      "praesenzzeit": 12,
+      "selbststudium": 3,
+      "inhalte": [
+        "Praktische Übungen zu HTML-Grundlagen - Praktische Übungen zu den/der im Rahmen der Vorlesung eingeführten Programmiersprache/EN"
+      ]
+    },
+    "voraussetzungen": "keine",
+    "literatur": [
+      "www.w3c.org",
+      "wiki.selfhtml.org",
+      "www.w3c.org de.selfhtml.org"
+    ],
+    "besonderheiten": {
+      "default": {
+        "name": "Besonderheit",
+        "content": [
+          "Die Prüfungsdauer bezieht sich auf die Klausur."
+        ]
+      }
+    }
+  }
+}

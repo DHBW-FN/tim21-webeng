@@ -1,0 +1,132 @@
+/* Underlinings */
+hr {
+    border: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
+}
+
+/* Defining colors used in modules.css */
+.mainContent {
+    --background-color: lightgrey;
+    --shadow-color: grey;
+}
+
+/* Redefining colors for dark mode */
+body.dark .mainContent {
+    --background-color: #3A3B3C;
+    --text-color: #CCC;
+}
+
+.small_block,
+.middle_block,
+.big_block,
+.overview_big_block{
+    float: left;
+    border: 2px solid var(--shadow-color);
+    border-radius: 10px;
+    background-color: var(--background-color);
+    margin: 10px;
+    padding: 8px;
+    box-shadow: 2px 2px 2px 2px var(--shadow-color);
+    color: var(--text-color);
+    word-wrap: break-word;
+}
+
+.small_block{
+    width: 28%;
+    min-width: 185px;
+    min-height: 300px;
+    word-wrap: break-word;
+}
+
+.middle_block{
+    width: 60%;
+    min-width: 403px;
+    height: 300px;
+}
+
+.big_block{
+    width: 92%;
+    min-width: 403px;
+    height: auto;
+}
+
+.module_field span{
+    background-color: rgba(58, 59, 60, 0.75);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.overview_big_block{
+    color: var(--accent-color);
+    width: 92%;
+    height: 100px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    position: relative;
+}
+
+#img_container_webEngineering1{
+    background-image: url(../assets/picture_webEngineering.png);
+}
+
+#img_container_webEngineering2{
+    background-image: url(../assets/picture_webEngineering.png);
+    background-position: center right;
+}
+
+#img_container_mathe1{
+    background-image: url(../assets/picture_mathe2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+#img_container_mathe2{
+    background-image: url(../assets/picture_mathe.jpg);
+    background-size: 100%;
+}
+
+#img_container_theoretischeInformatik1{
+    background-image: url(../assets/picture_theoretischeInformatik.jpg);
+    background-size: 100%;
+    background-position: bottom;
+}
+
+#img_container_programmieren1{
+    background-image: url(../assets/picture_programmieren.jpg);
+    background-position: center right;
+}
+
+#img_container_programmieren2{
+    background-image: url(../assets/picture_programmieren2.png);
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#img_container_bwl1{
+    background-image: url(../assets/picture_bwl.jpg);
+    background-position: center;
+}
+
+#img_container_bwl2{
+    background-image: url(../assets/picture_bwl3.webp);
+    background-position: center right;
+}
+
+#img_container_bwl3{
+    background-image: url(../assets/picture_bwl2.jpg);
+    background-position: center right;
+}
+
+#img_container_elektrotechnik1{
+    background-image: url(../assets/picture_elektrotechnik.jpg);
+    background-position: center right;
+    background-size: 100%;
+}
+
+#img_container_elektrotechnik2{
+    background-image: url(../assets/picture_elektrotechnik2.jpg);
+    background-position: center right;
+}

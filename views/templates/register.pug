@@ -1,0 +1,32 @@
+extends layout
+block append head
+    link(rel='stylesheet', href='/css/register.css')
+    title Register
+block content
+    .middle
+        form#registerForm.register(name='registerForm', method='post', action='/api/register')
+            label(for='registerFirstName') First Name
+            input#registerFirstName(type='text', name='firstname', required='', placeholder=' Enter First Name')
+            label(for='registerLastName') Last Name
+            input#registerLastName(type='text', name='lastname', required='', placeholder=' Enter Last Name')
+            label(for='registerUsername') Username
+            input#registerUsername(type='text', name='username', required='', placeholder=' Enter Username')
+            label(for='registerPassword') Password
+            input#registerPassword(type='password', name='password', required='', placeholder=' Enter Password')
+            label(for='genderSelect') Select gender
+            #genderSelect
+                label(for='registerSexMale') Male
+                input#registerSexMale(type='radio', name='sex', value='male')
+                label(for='registerSexFemale') Female
+                input#registerSexFemale(type='radio', name='sex', value='female')
+            label(for='registerFocus') Focus
+            select#registerFocus(name='focus', size='4')
+                option(value='tim') TIM
+                option(value='tis') TIS
+                option(value='tit') TIT
+                option(value='tik') TIK
+            label(for='registerComment') Comment:
+            textarea#registerComment(name='comment', form='registerForm', maxlength='100', placeholder=' Enter text here...')
+            label(for='registerTos') Accept Terms of Service
+            input#registerTos(type='checkbox', name='tos')
+            button#registerSubmit(type='submit') Register

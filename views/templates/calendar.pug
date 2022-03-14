@@ -1,0 +1,23 @@
+extends layout
+block append head
+    link(rel='stylesheet', href='/css/calendar.css')
+    title Kalender
+block content
+    .calendar
+        table#calendarTable
+            tr
+                th
+                    strong Startzeit
+                th
+                    strong Endzeit
+                th
+                    strong Event
+                th
+                    strong Ort
+            each event in events
+                if event["type"] === "VEVENT"
+                    tr.calendarEntry
+                        th #{event["start"]}
+                        th #{event["end"]}
+                        th #{event["summary"]}
+                        th #{event["location"]}
