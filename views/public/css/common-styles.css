@@ -40,10 +40,7 @@ body.dark{
 
 .home{
     color: var(--text-color);
-}
-
-.surr_block{
-    margin: 15px;
+    padding: 15px;
 }
 
 .home header {
