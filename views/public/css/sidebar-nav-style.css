@@ -7,20 +7,12 @@
     box-sizing: border-box;
 }
 
-:root{
-    /* Defining colors used in navbar.css */
-    --body-color: #E4E9F7;
-    --sidebar-color: #FFF;
-    --primary-color: #e2001a;
-    --primary-color-light: #d0949a;
-    --toggle-color: #DDD;
+.sidebar{
     --text-color: #707070;
+}
 
-    /* Defining transitions used in navbar.css */
-    --transition-2: all 0.2s ease;
-    --transition-3: all 0.3s ease;
-    --transition-4: all 0.4s ease;
-    --transition-5: all 0.5s ease;
+body.dark .sidebar{
+    --text-color: #CCC;
 }
 
 .no_transition * {
@@ -35,16 +27,6 @@ body{
     height: 100vh;
     background: var(--body-color);
     transition: var(--transition-5);
-}
-
-/* Redefining colors for dark mode */
-body.dark{
-    --body-color: #18191A;
-    --sidebar-color: #242526;
-    --primary-color: #3A3B3C;
-    --primary-color-light: #3A3B3C;
-    --toggle-color: #FFF;
-    --text-color: #CCC;
 }
 
 /*
