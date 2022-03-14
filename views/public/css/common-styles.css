@@ -41,20 +41,11 @@ body.dark{
     padding: 15px;
 }
 
-.home header {
-    padding: 5px;
-    grid-area: myheader;
-}
-
 aside {
     position: fixed;
     right: 0;
     top: 0;
     width: 200px;
-}
-
-footer {
-    padding: 5px;
 }
 
 .home ul{
