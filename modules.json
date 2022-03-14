@@ -224,8 +224,16 @@
     },
     "voraussetzungen": "keine",
     "literatur": [
-      "Beutelspacher: Lineare Algebra, Vieweg+Teubner - Fischer: Lineare Algebra, Vieweg+Teubner - Hartmann: Mathematik für Informatiker, Vieweg+Teubner - Lau: Algebra und Diskrete Mathematik 1, Springer - Teschl, Teschl: Mathematik für Informatiker: Band 1. diskrete Mathematik und lineare Algebra, Springer - Kreußler, Pfister: Mathematik für Informatiker: Algebra, Analysis, Diskrete Strukturen, Springer",
-      "Estep: Angewandte Analysis in einer Unbekannten, Springer - Hartmann: Mathematik für Informatiker, Vieweg+Teubner - Hildebrandt: Analysis 1, Springer - Teschl, Teschl: Mathematik für Informatiker: Band 2. Analysis und Statistik, Springer"
+      "Beutelspacher: Lineare Algebra",
+      "Fischer: Lineare Algebra",
+      "Hartmann: Mathematik für Informatiker",
+      "Lau: Algebra und Diskrete Mathematik 1",
+      "Teschl, Teschl: Mathematik für Informatiker: Band 1. diskrete Mathematik und lineare Algebra",
+      "Kreußler, Pfister: Mathematik für Informatiker: Algebra, Analysis, Diskrete Strukturen",
+      "Estep: Angewandte Analysis in einer Unbekannten",
+      "Springer - Hartmann: Mathematik für Informatiker",
+      "Hildebrandt: Analysis 1",
+      "Teschl, Teschl: Mathematik für Informatiker: Band 2. Analysis und Statistik"
     ],
     "besonderheiten": {
       "default": {
