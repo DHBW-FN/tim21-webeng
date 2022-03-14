@@ -1,0 +1,41 @@
+Tobias
+	Pfade in großen Projekten, wo sich die Struktur,
+	gerade am Anfang noch häufig verändert, korrekt anzugeben ist sehr schwierig
+		-absolut vs relativ
+		-app.use(express.static("views/public")); verändert die auch nochmal
+
+	NodeJs und Express richtig zu konfigurieren war sehr anspruchsvoll
+		-jede Anleitung/Doku die man findet macht es etwas anders
+			-app vs server vs router
+
+	Reguläre Ausdrücke, gerade für die Registrierungsdatenüberprüfung sind anfällig für Fehler
+	und auch nur ein falsch gesetztes Zeichen macht alles kaputt
+		-Lösungen waren meistens look-aheads
+
+	Pug templates sind relativ einfach gefallen, die einzigen Probleme waren meistens
+	mit den von NodeJs übergebenen Parametern und dem richtigen einbinden und iterieren.
+
+	CSS styling ist sehr unübersichtlich
+		-alles wird von irgendwo überschrieben
+			-man muss so genau wie möglich seine elemente definieren um das zu vermeiden
+		-erst spät mit variablen ür textfarbe etc. angefangen, große Erleichterung
+
+	NodeJS Endpunkte definieren war, sobald man es einmal verstanden hat relativ einfach
+
+	Sessions von Usern korrekt zu halten und tracken war bis ich express-session und cookie-parser gefunden habe
+	sehr schwierig und dort habe ich mich etwas verrannt.
+
+	Das Lesen von Textdateien in nodejs war relativ simpel, das korrekte parsen und aufbereiten der Daten
+	jedoch sehr anspruchsvoll.
+
+	JSDoc lässt sich unter Windows sehr schwer ausführen, über powershell mit administrator und
+	policy verändern.
+
+	Wir haben die Idee gehabt noch die ical Datei unter /calendar einzubinden.
+	Mussten aus Zeitgründen jedoch davon absehen.
+	Das Auslesen und die Einbindung in den Get Endpoint wurden jedoch umgesetzt.
+
+	Da wir Git als Versionskontrollsoftware benutzt haben war das zusammenarbeiten meist sehr gut,
+	weil nicht jeder Erfahrung mit git hatte, gab es ab und zu Probleme bei dem Benutzen des korrekten branches
+	und Pushen/Mergen der Changes, was jedoch immer gut komuniziert wurde und behoben werden konnte.
+
